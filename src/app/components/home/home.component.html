@@ -1,38 +1,54 @@
 <div class="container-fluid">
-  <!-- Language Switcher -->
-  <div class="text-end pt-4">
-    <button class="btn btn-primary mx-2" (click)="switchLanguage('en')">English</button>
-    <button class="btn btn-primary mx-2" (click)="switchLanguage('es')">Español</button>
-  </div>
-
   <!-- Navigation Buttons -->
   <div class="text-center pt-4">
-    <a class="btn btn-secondary mx-2" href="#goalkeepers">{{ 'NAV_GOALKEEPERS' | translate }}</a>
-    <a class="btn btn-secondary mx-2" href="#defenders">{{ 'NAV_DEFENDERS' | translate }}</a>
-    <a class="btn btn-secondary mx-2" href="#midfielders">{{ 'NAV_MIDFIELDERS' | translate }}</a>
-    <a class="btn btn-secondary mx-2" href="#forwards">{{ 'NAV_FORWARDS' | translate }}</a>
+    <a class="btn btn-secondary mx-2" href="#goalkeepers">{{
+      "NAV_GOALKEEPERS" | translate
+    }}</a>
+    <a class="btn btn-secondary mx-2" href="#defenders">{{
+      "NAV_DEFENDERS" | translate
+    }}</a>
+    <a class="btn btn-secondary mx-2" href="#midfielders">{{
+      "NAV_MIDFIELDERS" | translate
+    }}</a>
+    <a class="btn btn-secondary mx-2" href="#forwards">{{
+      "NAV_FORWARDS" | translate
+    }}</a>
   </div>
 
   <!-- Goalkeepers -->
-  <h2 id="goalkeepers" class="text-center mb-4 section-title">{{ 'GOALKEEPERS' | translate }}</h2>
+  <h2 id="goalkeepers" class="text-center mb-4 section-title">
+    {{ "GOALKEEPERS" | translate }}
+  </h2>
   <div class="row">
     <ng-container *ngFor="let player of players">
-      <div class="col-sm-12 col-md-6 col-lg-4 mb-4" *ngIf="player.position === 'goalkeeper'">
+      <div
+        class="col-sm-12 col-md-6 col-lg-4 mb-4"
+        *ngIf="player.position === 'goalkeeper'"
+      >
         <div class="card player-card">
           <div class="card-img-wrapper">
-            <img [src]="player.image" class="card-img-top" alt="{{ player.name }}" />
+            <img
+              [src]="player.image"
+              class="card-img-top"
+              alt="{{ player.name }}"
+            />
             <div class="card-overlay">
               <div class="overlay-content">
                 <h5>{{ player.name }}</h5>
-                <p>{{ 'GAMES' | translate }}: {{ player.stats.games }}</p>
-                <p>{{ 'CLEAN_SHEETS' | translate }}: {{ player.stats.cleanSheets }}</p>
-                <p>{{ 'SAVES' | translate }}: {{ player.stats.saves }}</p>
+                <p>{{ "GAMES" | translate }}: {{ player.stats.games }}</p>
+                <p>
+                  {{ "CLEAN_SHEETS" | translate }}:
+                  {{ player.stats.cleanSheets }}
+                </p>
+                <p>{{ "SAVES" | translate }}: {{ player.stats.saves }}</p>
               </div>
             </div>
           </div>
           <div class="card-body text-center">
             <h5 class="card-title">{{ player.name }}</h5>
-            <a [routerLink]="['/player', player.id]" class="btn btn-primary">{{ 'VIEW_STATS' | translate }}</a>
+            <a [routerLink]="['/player', player.id]" class="btn btn-primary">{{
+              "VIEW_STATS" | translate
+            }}</a>
           </div>
         </div>
       </div>
@@ -40,25 +56,36 @@
   </div>
 
   <!-- Defenders -->
-  <h2 id="defenders" class="text-center mb-4 section-title">{{ 'DEFENDERS' | translate }}</h2>
+  <h2 id="defenders" class="text-center mb-4 section-title">
+    {{ "DEFENDERS" | translate }}
+  </h2>
   <div class="row">
     <ng-container *ngFor="let player of players">
-      <div class="col-sm-12 col-md-6 col-lg-4 mb-4" *ngIf="player.position === 'defender'">
+      <div
+        class="col-sm-12 col-md-6 col-lg-4 mb-4"
+        *ngIf="player.position === 'defender'"
+      >
         <div class="card player-card">
           <div class="card-img-wrapper">
-            <img [src]="player.image" class="card-img-top" alt="{{ player.name }}" />
+            <img
+              [src]="player.image"
+              class="card-img-top"
+              alt="{{ player.name }}"
+            />
             <div class="card-overlay">
               <div class="overlay-content">
                 <h5>{{ player.name }}</h5>
-                <p>{{ 'GAMES' | translate }}: {{ player.stats.games }}</p>
-                <p>{{ 'GOALS' | translate }}: {{ player.stats.goals }}</p>
-                <p>{{ 'ASSISTS' | translate }}: {{ player.stats.assists }}</p>
+                <p>{{ "GAMES" | translate }}: {{ player.stats.games }}</p>
+                <p>{{ "GOALS" | translate }}: {{ player.stats.goals }}</p>
+                <p>{{ "ASSISTS" | translate }}: {{ player.stats.assists }}</p>
               </div>
             </div>
           </div>
           <div class="card-body text-center">
             <h5 class="card-title">{{ player.name }}</h5>
-            <a [routerLink]="['/player', player.id]" class="btn btn-primary">{{ 'VIEW_STATS' | translate }}</a>
+            <a [routerLink]="['/player', player.id]" class="btn btn-primary">{{
+              "VIEW_STATS" | translate
+            }}</a>
           </div>
         </div>
       </div>
@@ -66,25 +93,36 @@
   </div>
 
   <!-- Midfielders -->
-  <h2 id="midfielders" class="text-center mb-4 section-title">{{ 'MIDFIELDERS' | translate }}</h2>
+  <h2 id="midfielders" class="text-center mb-4 section-title">
+    {{ "MIDFIELDERS" | translate }}
+  </h2>
   <div class="row">
     <ng-container *ngFor="let player of players">
-      <div class="col-sm-12 col-md-6 col-lg-4 mb-4" *ngIf="player.position === 'midfielder'">
+      <div
+        class="col-sm-12 col-md-6 col-lg-4 mb-4"
+        *ngIf="player.position === 'midfielder'"
+      >
         <div class="card player-card">
           <div class="card-img-wrapper">
-            <img [src]="player.image" class="card-img-top" alt="{{ player.name }}" />
+            <img
+              [src]="player.image"
+              class="card-img-top"
+              alt="{{ player.name }}"
+            />
             <div class="card-overlay">
               <div class="overlay-content">
                 <h5>{{ player.name }}</h5>
-                <p>{{ 'GAMES' | translate }}: {{ player.stats.games }}</p>
-                <p>{{ 'GOALS' | translate }}: {{ player.stats.goals }}</p>
-                <p>{{ 'ASSISTS' | translate }}: {{ player.stats.assists }}</p>
+                <p>{{ "GAMES" | translate }}: {{ player.stats.games }}</p>
+                <p>{{ "GOALS" | translate }}: {{ player.stats.goals }}</p>
+                <p>{{ "ASSISTS" | translate }}: {{ player.stats.assists }}</p>
               </div>
             </div>
           </div>
           <div class="card-body text-center">
             <h5 class="card-title">{{ player.name }}</h5>
-            <a [routerLink]="['/player', player.id]" class="btn btn-primary">{{ 'VIEW_STATS' | translate }}</a>
+            <a [routerLink]="['/player', player.id]" class="btn btn-primary">{{
+              "VIEW_STATS" | translate
+            }}</a>
           </div>
         </div>
       </div>
@@ -92,25 +130,36 @@
   </div>
 
   <!-- Forwards -->
-  <h2 id="forwards" class="text-center mb-4 section-title">{{ 'FORWARDS' | translate }}</h2>
+  <h2 id="forwards" class="text-center mb-4 section-title">
+    {{ "FORWARDS" | translate }}
+  </h2>
   <div class="row">
     <ng-container *ngFor="let player of players">
-      <div class="col-sm-12 col-md-6 col-lg-4 mb-4" *ngIf="player.position === 'forward'">
+      <div
+        class="col-sm-12 col-md-6 col-lg-4 mb-4"
+        *ngIf="player.position === 'forward'"
+      >
         <div class="card player-card">
           <div class="card-img-wrapper">
-            <img [src]="player.image" class="card-img-top" alt="{{ player.name }}" />
+            <img
+              [src]="player.image"
+              class="card-img-top"
+              alt="{{ player.name }}"
+            />
             <div class="card-overlay">
               <div class="overlay-content">
                 <h5>{{ player.name }}</h5>
-                <p>{{ 'GAMES' | translate }}: {{ player.stats.games }}</p>
-                <p>{{ 'GOALS' | translate }}: {{ player.stats.goals }}</p>
-                <p>{{ 'ASSISTS' | translate }}: {{ player.stats.assists }}</p>
+                <p>{{ "GAMES" | translate }}: {{ player.stats.games }}</p>
+                <p>{{ "GOALS" | translate }}: {{ player.stats.goals }}</p>
+                <p>{{ "ASSISTS" | translate }}: {{ player.stats.assists }}</p>
               </div>
             </div>
           </div>
           <div class="card-body text-center">
             <h5 class="card-title">{{ player.name }}</h5>
-            <a [routerLink]="['/player', player.id]" class="btn btn-primary">{{ 'VIEW_STATS' | translate }}</a>
+            <a [routerLink]="['/player', player.id]" class="btn btn-primary">{{
+              "VIEW_STATS" | translate
+            }}</a>
           </div>
         </div>
       </div>
