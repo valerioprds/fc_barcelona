@@ -2,6 +2,7 @@ export interface Player {
   id: string;
   name: string;
   image: string;
+  position: string;
   stats: {
     games?: number;
     cleanSheets?: number;
