@@ -7,6 +7,13 @@ export interface Player {
   dateOfBirth: string;
   weight: number;
   height: number;
+  honors: {
+    laLiga: number;
+    championsLeague: number;
+    copaDelRey: number;
+    clubWorldCup: number;
+
+  };
   biography: string;
   stats: {
     games: number;

@@ -20,6 +20,12 @@
         "cleanSheets": 17,
         "saves": 96
       }
+    },
+    "honors": {
+      "laLiga": 5,
+      "championsLeague": 1,
+      "copaDelRey": 4,
+      "clubWorldCup": 1
     }
   },
   {
@@ -43,6 +49,12 @@
         "cleanSheets": 17,
         "saves": 96
       }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 0,
+      "copaDelRey": 1,
+      "clubWorldCup": 0
     }
   },
   {
@@ -66,6 +78,12 @@
         "goals": 42,
         "assists": 5
       }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 0,
+      "copaDelRey": 1,
+      "clubWorldCup": 0
     }
   },
   {
@@ -89,6 +107,12 @@
         "goals": 1,
         "assists": 1
       }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 0,
+      "copaDelRey": 1,
+      "clubWorldCup": 0
     }
   },
   {
@@ -112,6 +136,12 @@
         "goals": 1,
         "assists": 2
       }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 0,
+      "copaDelRey": 1,
+      "clubWorldCup": 0
     }
   },
   {
@@ -135,6 +165,12 @@
         "goals": 0,
         "assists": 0
       }
+    },
+    "honors": {
+      "laLiga": 0,
+      "championsLeague": 0,
+      "copaDelRey": 2,
+      "clubWorldCup": 0
     }
   },
   {
@@ -158,6 +194,12 @@
         "goals": 3,
         "assists": 2
       }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 1,
+      "copaDelRey": 0,
+      "clubWorldCup": 1
     }
   },
   {
@@ -181,6 +223,12 @@
         "goals": 3,
         "assists": 2
       }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 1,
+      "copaDelRey": 0,
+      "clubWorldCup": 1
     }
   },
   {
@@ -204,6 +252,12 @@
         "goals": 3,
         "assists": 2
       }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 0,
+      "copaDelRey": 1,
+      "clubWorldCup": 0
     }
   },
   {
@@ -227,6 +281,12 @@
         "goals": 3,
         "assists": 2
       }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 0,
+      "copaDelRey": 1,
+      "clubWorldCup": 0
     }
   },
   {
@@ -250,6 +310,12 @@
         "goals": 4,
         "assists": 5
       }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 0,
+      "copaDelRey": 1,
+      "clubWorldCup": 0
     }
   },
   {
@@ -273,6 +339,12 @@
         "goals": 4,
         "assists": 5
       }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 0,
+      "copaDelRey": 1,
+      "clubWorldCup": 0
     }
   },
   {
@@ -294,6 +366,12 @@
         "games": 37,
         "assists": 1
       }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 0,
+      "copaDelRey": 1,
+      "clubWorldCup": 0
     }
   },
   {
@@ -317,6 +395,12 @@
         "goals": 3,
         "assists": 3
       }
+    },
+    "honors": {
+      "laLiga": 7,
+      "championsLeague": 2,
+      "copaDelRey": 6,
+      "clubWorldCup": 3
     }
   },
   {
@@ -340,6 +424,12 @@
         "goals": 2,
         "assists": 0
       }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 0,
+      "copaDelRey": 1,
+      "clubWorldCup": 0
     }
   },
   {
@@ -363,6 +453,12 @@
         "goals": 5,
         "assists": 14
       }
+    },
+    "honors": {
+      "laLiga": 0,
+      "championsLeague": 2,
+      "copaDelRey": 0,
+      "clubWorldCup": 1
     }
   },
   {
@@ -386,6 +482,12 @@
         "goals": 11,
         "assists": 3
       }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 0,
+      "copaDelRey": 1,
+      "clubWorldCup": 0
     }
   },
   {
@@ -409,6 +511,12 @@
         "goals": 26,
         "assists": 9
       }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 1,
+      "copaDelRey": 0,
+      "clubWorldCup": 1
     }
   },
   {
@@ -432,6 +540,12 @@
         "goals": 10,
         "assists": 11
       }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 0,
+      "copaDelRey": 1,
+      "clubWorldCup": 0
     }
   },
   {
@@ -455,6 +569,12 @@
         "goals": 10,
         "assists": 6
       }
+    },
+    "honors": {
+      "laLiga": 0,
+      "championsLeague": 0,
+      "copaDelRey": 1,
+      "clubWorldCup": 0
     }
   },
   {
@@ -476,6 +596,12 @@
         "games": 16,
         "goals": 2
       }
+    },
+    "honors": {
+      "laLiga": 0,
+      "championsLeague": 0,
+      "copaDelRey": 0,
+      "clubWorldCup": 0
     }
   }
 ]
