@@ -3,7 +3,7 @@ export interface Player {
   name: string;
   image: string;
   stats: {
-    goals: number;
-    assists: number;
+    goals?: number;
+    assists?: number;
   };
 }
