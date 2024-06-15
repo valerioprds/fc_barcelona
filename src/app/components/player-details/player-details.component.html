@@ -11,7 +11,7 @@
         <div class="col-6">
           <div class="card mb-2">
             <div class="card-body">
-              <h5 class="card-title">Place of Birth</h5>
+              <h5 class="card-title">{{ 'PLACE_OF_BIRTH' | translate }}</h5>
               <p class="card-text">{{ player.placeOfBirth }}</p>
             </div>
           </div>
@@ -19,7 +19,7 @@
         <div class="col-6">
           <div class="card mb-2">
             <div class="card-body">
-              <h5 class="card-title">Date of Birth</h5>
+              <h5 class="card-title">{{ 'DATE_OF_BIRTH' | translate }}</h5>
               <p class="card-text">{{ player.dateOfBirth | date }}</p>
             </div>
           </div>
@@ -27,7 +27,7 @@
         <div class="col-6">
           <div class="card mb-2">
             <div class="card-body">
-              <h5 class="card-title">Weight</h5>
+              <h5 class="card-title">{{ 'WEIGHT' | translate }}</h5>
               <p class="card-text">{{ player.weight }} kg</p>
             </div>
           </div>
@@ -35,7 +35,7 @@
         <div class="col-6">
           <div class="card mb-2">
             <div class="card-body">
-              <h5 class="card-title">Height</h5>
+              <h5 class="card-title">{{ 'HEIGHT' | translate }}</h5>
               <p class="card-text">{{ player.height }} cm</p>
             </div>
           </div>
@@ -43,7 +43,7 @@
         <div class="col-6">
           <div class="card mb-2">
             <div class="card-body">
-              <h5 class="card-title">Games</h5>
+              <h5 class="card-title">{{ 'GAMES' | translate }}</h5>
               <p class="card-text">{{ player.stats.games }}</p>
             </div>
           </div>
@@ -51,7 +51,7 @@
         <div class="col-6" *ngIf="player.stats.cleanSheets">
           <div class="card mb-2">
             <div class="card-body">
-              <h5 class="card-title">Clean Sheets</h5>
+              <h5 class="card-title">{{ 'CLEAN_SHEETS' | translate }}</h5>
               <p class="card-text">{{ player.stats.cleanSheets }}</p>
             </div>
           </div>
@@ -59,7 +59,7 @@
         <div class="col-6" *ngIf="player.stats.saves">
           <div class="card mb-2">
             <div class="card-body">
-              <h5 class="card-title">Saves</h5>
+              <h5 class="card-title">{{ 'SAVES' | translate }}</h5>
               <p class="card-text">{{ player.stats.saves }}</p>
             </div>
           </div>
@@ -67,16 +67,16 @@
         <div class="col-12">
           <div class="card mb-2">
             <div class="card-body">
-              <h5 class="card-title">Seasons</h5>
+              <h5 class="card-title">{{ 'SEASONS' | translate }}</h5>
               <p class="card-text">
                 {{ player.stats.seasons.start }}/{{ player.stats.seasons.end }}
               </p>
-              <p class="card-text">Games: {{ player.stats.seasons.games }}</p>
+              <p class="card-text">{{ 'GAMES' | translate }}: {{ player.stats.seasons.games }}</p>
               <p class="card-text" *ngIf="player.stats.seasons.cleanSheets">
-                Clean Sheets: {{ player.stats.seasons.cleanSheets }}
+                {{ 'CLEAN_SHEETS' | translate }}: {{ player.stats.seasons.cleanSheets }}
               </p>
               <p class="card-text" *ngIf="player.stats.seasons.saves">
-                Saves: {{ player.stats.seasons.saves }}
+                {{ 'SAVES' | translate }}: {{ player.stats.seasons.saves }}
               </p>
             </div>
           </div>
@@ -84,11 +84,11 @@
         <div class="col-12">
           <div class="card mb-2">
             <div class="card-body">
-              <h5 class="card-title">Honors</h5>
-              <p class="card-text">La Liga: {{ player.honors.laLiga }}</p>
-              <p class="card-text">Champions League: {{ player.honors.championsLeague }}</p>
-              <p class="card-text">Copa del Rey: {{ player.honors.copaDelRey }}</p>
-              <p class="card-text">Club World Cup: {{ player.honors.clubWorldCup }}</p>
+              <h5 class="card-title">{{ 'HONORS' | translate }}</h5>
+              <p class="card-text">{{ 'LA_LIGA' | translate }}: {{ player.honors.laLiga }}</p>
+              <p class="card-text">{{ 'CHAMPIONS_LEAGUE' | translate }}: {{ player.honors.championsLeague }}</p>
+              <p class="card-text">{{ 'COPA_DEL_REY' | translate }}: {{ player.honors.copaDelRey }}</p>
+              <p class="card-text">{{ 'CLUB_WORLD_CUP' | translate }}: {{ player.honors.clubWorldCup }}</p>
             </div>
           </div>
         </div>
@@ -106,7 +106,7 @@
     <div class="col-12">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Biography</h5>
+          <h5 class="card-title">{{ 'BIOGRAPHY' | translate }}</h5>
           <p class="card-text">{{ player.biography }}</p>
         </div>
       </div>

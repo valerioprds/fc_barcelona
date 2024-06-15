@@ -17,8 +17,16 @@
   "TEAM": "Team",
   "MATCHES": "Matches",
   "SHOP": "Shop",
-  "CONTACT": "Contact"
-
+  "CONTACT": "Contact",
+  "PLACE_OF_BIRTH": "Place of Birth",
+  "DATE_OF_BIRTH": "Date of Birth",
+  "WEIGHT": "Weight",
+  "HEIGHT": "Height",
+  "SEASONS": "Seasons",
+  "HONORS": "Honors",
+  "LA_LIGA": "La Liga",
+  "CHAMPIONS_LEAGUE": "Champions League",
+  "COPA_DEL_REY": "Copa del Rey",
+  "CLUB_WORLD_CUP": "Club World Cup",
+  "BIOGRAPHY": "Biography"
 }
-
-
