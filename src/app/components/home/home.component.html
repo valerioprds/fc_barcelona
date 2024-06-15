@@ -10,8 +10,8 @@
         <div class="card-body">
           <h5 class="card-title">{{ player.name }}</h5>
           <p class="card-text">
-            Goals: {{ player.stats.goals }} | Assists:
-            {{ player.stats.assists }}
+            games: {{ player.stats.games }} | Clean Sheets:
+            {{ player.stats.cleanSheets }} | Saves: {{ player.stats.saves }}
           </p>
           <a [routerLink]="['/player', player.id]" class="btn btn-primary"
             >View Stats</a

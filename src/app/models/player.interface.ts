@@ -3,7 +3,15 @@ export interface Player {
   name: string;
   image: string;
   stats: {
-    goals?: number;
-    assists?: number;
+    games?: number;
+    cleanSheets?: number;
+    saves?: number;
+    seasons?: {
+      start?: number;
+      end?: number;
+      games?: number;
+      cleanSheets?: number;
+      saves?: number;
+    };
   };
 }

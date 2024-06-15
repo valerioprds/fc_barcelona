@@ -1,10 +1,14 @@
- <div *ngIf="player">
+<div *ngIf="player">
   <h2>{{ player.name }}</h2>
-  <img [src]="player.image" alt="{{ player.name }}" class="img-fluid">
-  <p>Goals: {{ player.stats.goals }}</p>
-  <p>Assists: {{ player.stats.assists }}</p>
+  <img [src]="player.image" alt="{{ player.name }}" class="img-fluid" />
+  <p>Games: {{ player.stats.games }}</p>
+  <p>Clean Sheets: {{ player.stats.cleanSheets }}</p>
+  <p>Clean saves: {{ player.stats.saves }}</p>
+  <!-- seasons Section-->
+  <p>
+    Seasons: {{ player.stats.seasons?.start }}/{{ player.stats.seasons?.end }}
+  </p>
+  <p>Games: {{ player.stats.seasons?.games }}</p>
+  <p>Clean Sheets per season: {{ player.stats.seasons?.cleanSheets }}</p>
+  <p>Saves per season: {{ player.stats.seasons?.saves }}</p>
 </div>
-
-
-
-
