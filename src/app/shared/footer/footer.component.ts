@@ -7,8 +7,10 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-switchLanguage(arg0: string) {
-throw new Error('Method not implemented.');
-}
+  constructor(private translate: TranslateService) {}
+
+  switchLanguage(language: string) {
+    this.translate.use(language);
+  }
 
 }
