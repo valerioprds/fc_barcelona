@@ -193,5 +193,95 @@
         "assists": 2
       }
     }
+  },
+
+  {
+    "id": "9",
+    "name": "Gavi",
+    "position": "midfielder",
+    "image": "/assets/images/30-GAVI_.webp",
+    "placeOfBirth": "Paris, France",
+    "dateOfBirth": "1998-11-12",
+    "weight": 75,
+    "height": 178,
+    "stats": {
+      "games": 74,
+      "goals": 4,
+      "assists": 3,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 42,
+        "goals": 3,
+        "assists": 2
+      }
+    }
+  },
+  {
+    "id": "10",
+    "name": "Gavi",
+    "position": "midfielder",
+    "image": "/assets/images/30-GAVI_.webp",
+    "placeOfBirth": "Los Palacios y Villafranca, Spain",
+    "dateOfBirth": "2004-08-05",
+    "weight": 70,
+    "height": 173,
+    "stats": {
+      "games": 111,
+      "goals": 7,
+      "assists": 12,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 15,
+        "goals": 2,
+        "assists": 1
+      }
+    }
+  },
+  {
+    "id": "10",
+    "name": "Pedri",
+    "position": "midfielder",
+    "image": "/assets/images/08-PEDRI.webp",
+    "placeOfBirth": "Tegueste, Spain",
+    "dateOfBirth": "2002-11-25",
+    "weight": 60,
+    "height": 174,
+    "stats": {
+      "games": 143,
+      "goals": 20,
+      "assists": 13,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 34,
+        "goals": 4,
+        "assists": 5
+      }
+    }
+  },
+
+  {
+    "id": "11",
+    "name": "Fermín López",
+    "position": "midfielder",
+    "image": "/assets/images/mini_16-FERMIN.webp",
+    "placeOfBirth": "Tegueste, Spain",
+    "dateOfBirth": "2002-11-25",
+    "weight": 60,
+    "height": 174,
+    "stats": {
+      "games": 143,
+      "goals": 20,
+      "assists": 13,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 34,
+        "goals": 4,
+        "assists": 5
+      }
+    }
   }
 ]
