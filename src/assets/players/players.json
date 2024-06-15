@@ -1,20 +1,36 @@
 [
   {
     "id": "1",
-    "name": "Player One",
-    "image": "assets/images/player1.jpg",
+    "name": "Marc-André ter Stegen",
+    "image": "/assets/images/01-MARC-ANDRE_TER_STEGEN.webp",
     "stats": {
-      "goals": 10,
-      "assists": 5
+      "games": 413,
+      "clean sheets": 173,
+      "saves": 962,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 36,
+        "clean sheets": 17,
+        "saves": 96
+      }
     }
   },
   {
     "id": "2",
-    "name": "Player Two",
-    "image": "assets/images/player2.jpg",
+    "name": "Iñaki Peña",
+    "image": "/assets/images/26-INAKI_PENA.webp",
     "stats": {
-      "goals": 8,
-      "assists": 7
+      "games": 413,
+      "clean sheets": 173,
+      "saves": 962,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 36,
+        "clean sheets": 17,
+        "saves": 96
+      }
     }
   }
 ]

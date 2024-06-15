@@ -16,23 +16,18 @@ export class PlayerDetailsComponent implements OnInit {
     private playerService: PlayerService
   ) {}
 
-
-   ngOnInit(): void {
-    this.route.paramMap.subscribe(params => {
+  ngOnInit(): void {
+    this.route.paramMap.subscribe((params) => {
       const playerId = params.get('id');
       if (playerId) {
         this.loadPlayerDetails(playerId);
       }
     });
-
-    console.log('ngoninit de player details');
   }
 
   loadPlayerDetails(playerId: string): void {
-    this.playerService.getPlayerById(playerId).subscribe(player => {
+    this.playerService.getPlayerById(playerId).subscribe((player) => {
       this.player = player;
     });
-
-    console.log('load player details');
-  } 
+  }
 }
