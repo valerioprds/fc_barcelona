@@ -121,10 +121,14 @@
     "height": 182,
     "stats": {
       "games": 25,
+      "goals": 0,
+      "assists": 0,
       "seasons": {
         "start": 2023,
         "end": 2024,
-        "games": 25
+        "games": 25,
+        "goals": 0,
+        "assists": 0
       }
     }
   },
@@ -334,10 +338,10 @@
     "name": "Ilkay Gündogan",
     "position": "midfielder",
     "image": "/assets/images/jugador_fitxa-gundogan.webp",
-    "placeOfBirth": "Arkel, Netherlands",
-    "dateOfBirth": "1997-05-12",
-    "weight": 74,
-    "height": 181,
+    "placeOfBirth": "Gelsenkirchen, Germany",
+    "dateOfBirth": "1990-10-24",
+    "weight": 80,
+    "height": 180,
     "stats": {
       "games": 51,
       "goals": 5,
@@ -346,8 +350,120 @@
         "start": 2023,
         "end": 2024,
         "games": 51,
-      "goals": 5,
-      "assists": 14
+        "goals": 5,
+        "assists": 14
+      }
+    }
+  },
+
+  {
+    "id": "16",
+    "name": "Ferran Torres",
+    "position": "forward",
+    "image": "/assets/images/11-FERRAN_TORRES.webp",
+    "placeOfBirth": "Foios, Spain",
+    "dateOfBirth": "2000-02-29",
+    "weight": 77,
+    "height": 184,
+    "stats": {
+      "games": 113,
+      "goals": 25,
+      "assists": 12,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 42,
+        "goals": 11,
+        "assists": 3
+      }
+    }
+  },
+
+  {
+    "id": "17",
+    "name": "Robert Lewandowski",
+    "position": "forward",
+    "image": "/assets/images/09-ROBERT_LEWANDOWSKI.webp",
+    "placeOfBirth": "Warszawa, Poland",
+    "dateOfBirth": "1988-08-21",
+    "weight": 81,
+    "height": 185,
+    "stats": {
+      "games": 95,
+      "goals": 59,
+      "assists": 17,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 49,
+        "goals": 26,
+        "assists": 9
+      }
+    }
+  },
+
+  {
+    "id": "18",
+    "name": "Raphinha",
+    "position": "forward",
+    "image": "/assets/images/22-RAPHINHA.webp",
+    "placeOfBirth": "Porto Alegre, Brazil",
+    "dateOfBirth": "1996-12-14",
+    "weight": 68,
+    "height": 176,
+    "stats": {
+      "games": 87,
+      "goals": 20,
+      "assists": 23,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 37,
+        "goals": 10,
+        "assists": 11
+      }
+    }
+  },
+
+  {
+    "id": "19",
+    "name": "João Félix",
+    "position": "forward",
+    "image": "/assets/images/jugador_fitxa-felix.webp",
+    "placeOfBirth": "Viseu, Portugal",
+    "dateOfBirth": "1999-11-10",
+    "weight": 70,
+    "height": 181,
+    "stats": {
+      "games": 44,
+      "goals": 10,
+      "assists": 6,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 44,
+        "goals": 10,
+        "assists": 6
+      }
+    }
+  },
+  {
+    "id": "20",
+    "name": "Vitor Roque",
+    "position": "forward",
+    "image": "/assets/images/19-VITOR_ROQUE.webp",
+    "placeOfBirth": "Viseu, Portugal",
+    "dateOfBirth": "2005-02-28",
+    "weight": 78,
+    "height": 174,
+    "stats": {
+      "games": 16,
+      "goals": 2,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 16,
+        "goals": 2
       }
     }
   }
