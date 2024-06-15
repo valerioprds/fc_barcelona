@@ -1,23 +1,115 @@
-<div class="container mt-4">
+<div class="container-fluid">
+  <!-- Goalkeepers -->
+  <h2 class="text-center mb-4">Goalkeepers</h2>
   <div class="row">
-    <div class="col-md-4" *ngFor="let player of players">
-      <div class="card mb-4" style="width: 18rem">
-        <img
-          [src]="player.image"
-          class="card-img-top"
-          alt="{{ player.name }}"
-        />
-        <div class="card-body">
-          <h5 class="card-title">{{ player.name }}</h5>
-          <p class="card-text">
-            games: {{ player.stats.games }} | Clean Sheets:
-            {{ player.stats.cleanSheets }} | Saves: {{ player.stats.saves }}
-          </p>
-          <a [routerLink]="['/player', player.id]" class="btn btn-primary"
-            >View Stats</a
-          >
+    <ng-container *ngFor="let player of players">
+      <div
+        class="col-sm-12 col-md-6 col-lg-4 mb-4"
+        *ngIf="player.position === 'goalkeeper'"
+      >
+        <div class="card" style="width: 100%">
+          <img
+            [src]="player.image"
+            class="card-img-top"
+            alt="{{ player.name }}"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ player.name }}</h5>
+            <p class="card-text">
+              Games: {{ player.stats.games }} | Clean Sheets:
+              {{ player.stats.cleanSheets }} | Saves: {{ player.stats.saves }}
+            </p>
+            <a [routerLink]="['/player', player.id]" class="btn btn-primary"
+              >View Stats</a
+            >
+          </div>
         </div>
       </div>
-    </div>
+    </ng-container>
+  </div>
+  <!-- defenders -->
+  <h2 class="text-center mb-4">Defenders</h2>
+  <div class="row">
+    <ng-container *ngFor="let player of players">
+      <div
+        class="col-sm-12 col-md-6 col-lg-4 mb-4"
+        *ngIf="player.position === 'defender'"
+      >
+        <div class="card" style="width: 100%">
+          <img
+            [src]="player.image"
+            class="card-img-top"
+            alt="{{ player.name }}"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ player.name }}</h5>
+            <p class="card-text">
+              Games: {{ player.stats.games }} | Goals:
+              {{ player.stats.goals }} | Assists: {{ player.stats.assists }}
+            </p>
+            <a [routerLink]="['/player', player.id]" class="btn btn-primary"
+              >View Stats</a
+            >
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+  <!-- midfielders -->
+  <h2 class="text-center mb-4">Midfielders</h2>
+  <div class="row">
+    <ng-container *ngFor="let player of players">
+      <div
+        class="col-sm-12 col-md-6 col-lg-4 mb-4"
+        *ngIf="player.position === 'midfielder'"
+      >
+        <div class="card" style="width: 100%">
+          <img
+            [src]="player.image"
+            class="card-img-top"
+            alt="{{ player.name }}"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ player.name }}</h5>
+            <p class="card-text">
+              Games: {{ player.stats.games }} | Goals:
+              {{ player.stats.goals }} | Assists: {{ player.stats.assists }}
+            </p>
+            <a [routerLink]="['/player', player.id]" class="btn btn-primary"
+              >View Stats</a
+            >
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+
+  <!-- Forwards -->
+  <h2 class="text-center mb-4">Forwards</h2>
+  <div class="row">
+    <ng-container *ngFor="let player of players">
+      <div
+        class="col-sm-12 col-md-6 col-lg-4 mb-4"
+        *ngIf="player.position === 'forward'"
+      >
+        <div class="card" style="width: 100%">
+          <img
+            [src]="player.image"
+            class="card-img-top"
+            alt="{{ player.name }}"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ player.name }}</h5>
+            <p class="card-text">
+              Games: {{ player.stats.games }} | Goals:
+              {{ player.stats.goals }} | Assists: {{ player.stats.assists }}
+            </p>
+            <a [routerLink]="['/player', player.id]" class="btn btn-primary"
+              >View Stats</a
+            >
+          </div>
+        </div>
+      </div>
+    </ng-container>
   </div>
 </div>

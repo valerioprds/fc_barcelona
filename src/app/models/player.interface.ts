@@ -1,17 +1,34 @@
 export interface Player {
   id: string;
   name: string;
+  position: string;
   image: string;
+  placeOfBirth: string;
+  dateOfBirth: string;
+  weight: number;
+  height: number;
+  honors: {
+    laLiga: number;
+    championsLeague: number;
+    copaDelRey: number;
+    clubWorldCup: number;
+
+  };
+  biography: string;
   stats: {
-    games?: number;
+    games: number;
     cleanSheets?: number;
     saves?: number;
-    seasons?: {
-      start?: number;
-      end?: number;
-      games?: number;
+    goals?: number;
+    assists?: number;
+    seasons: {
+      start: number;
+      end: number;
+      games: number;
       cleanSheets?: number;
       saves?: number;
+      goals?: number;
+      assists?: number;
     };
   };
 }

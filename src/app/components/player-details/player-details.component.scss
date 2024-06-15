@@ -1,0 +1,32 @@
+.container {
+  .card {
+    background-color: #f8f9fa;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card-title {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .card-text {
+    font-size: 14px;
+    color: #666;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    font-weight: normal;
+  }
+}

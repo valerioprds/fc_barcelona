@@ -2,8 +2,13 @@
   {
     "id": "1",
     "name": "Marc-André ter Stegen",
-    "position": "Goalkeeper",
+    "position": "goalkeeper",
     "image": "/assets/images/01-MARC-ANDRE_TER_STEGEN.webp",
+    "placeOfBirth": "Mönchengladbach, Germany",
+    "dateOfBirth": "1992-04-30",
+    "weight": 85,
+    "height": 187,
+    "biography": "Marc-André ter Stegen signed for FC Barcelona in the summer of 2014 from Borussia Mönchengladbach. Born on 30 April 1992 in Mönchengladbach itself, the German did not take long to make his name as one Europe’s most promising young goalkeepers.",
     "stats": {
       "games": 413,
       "cleanSheets": 173,
@@ -15,14 +20,24 @@
         "cleanSheets": 17,
         "saves": 96
       }
+    },
+    "honors": {
+      "laLiga": 5,
+      "championsLeague": 1,
+      "copaDelRey": 4,
+      "clubWorldCup": 1
     }
   },
   {
     "id": "2",
     "name": "Iñaki Peña",
-    "position": "Goalkeeper",
-
+    "position": "goalkeeper",
     "image": "/assets/images/26-INAKI_PENA.webp",
+    "placeOfBirth": "Alicante, Spain",
+    "dateOfBirth": "1999-03-02",
+    "weight": 77,
+    "height": 184,
+    "biography": "Iñaki Peña signed for Alicante CF when he was just five years old. In 2009, Villarreal CF was interested in the precocious player, where he began to stand out, especially in 2011, when he was chosen as the best goalkeeper of the Arona tournament. Barça had its eye on him and a year later he came to the Masia.",
     "stats": {
       "games": 413,
       "cleanSheets": 173,
@@ -31,9 +46,562 @@
         "start": 2023,
         "end": 2024,
         "games": 36,
-        "clean sheets": 17,
+        "cleanSheets": 17,
         "saves": 96
       }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 0,
+      "copaDelRey": 1,
+      "clubWorldCup": 0
+    }
+  },
+  {
+    "id": "3",
+    "name": "João Cancelo",
+    "position": "defender",
+    "image": "/assets/images/Cancelo.webp",
+    "placeOfBirth": "Barreiro, Portugal",
+    "dateOfBirth": "1994-05-27",
+    "weight": 74,
+    "height": 182,
+    "biography": "Born in Barreiro, Portugal, on 27 May 1991, João Cancelo started out playing in his hometown before joining Benfica at a young age.",
+    "stats": {
+      "games": 42,
+      "goals": 4,
+      "assists": 5,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 42,
+        "goals": 42,
+        "assists": 5
+      }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 0,
+      "copaDelRey": 1,
+      "clubWorldCup": 0
+    }
+  },
+  {
+    "id": "4",
+    "name": "Alejandro Balde",
+    "position": "defender",
+    "image": "/assets/images/mini_28-BALDE.webp",
+    "placeOfBirth": "Barcelona, Spain",
+    "dateOfBirth": "2003-10-18",
+    "weight": 69,
+    "height": 175,
+    "biography": "Alejandro Balde, born in Barcelona to Guinean and Dominican parents, is a fast and explosive full back who joined Barça in 2011 at the age of eight after coming up through ranks at Espanyol.",
+    "stats": {
+      "games": 80,
+      "goals": 2,
+      "assists": 7,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 28,
+        "goals": 1,
+        "assists": 1
+      }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 0,
+      "copaDelRey": 1,
+      "clubWorldCup": 0
+    }
+  },
+  {
+    "id": "5",
+    "name": "Ronald Araujo",
+    "position": "defender",
+    "image": "/assets/images/04-RONALD_ARAUJO_.webp",
+    "placeOfBirth": "Rivera, Uruguay",
+    "dateOfBirth": "1999-03-07",
+    "weight": 79,
+    "height": 188,
+    "biography": "Ronald Araujo was born in Rivera, Uruguay, on 7 March 1999. The young central defender began playing professionally for his hometown team, and later joined the lower categories at Rentistas in the Uruguayan Second Division.",
+    "stats": {
+      "games": 150,
+      "goals": 8,
+      "assists": 5,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 37,
+        "goals": 1,
+        "assists": 2
+      }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 0,
+      "copaDelRey": 1,
+      "clubWorldCup": 0
+    }
+  },
+  {
+    "id": "6",
+    "name": "Iñigo Martínez",
+    "position": "defender",
+    "image": "/assets/images/jugador_fitxa_inigo_2023.webp",
+    "placeOfBirth": "Ondarroa, Spain",
+    "dateOfBirth": "1991-05-17",
+    "weight": 81,
+    "height": 182,
+    "biography": "Born in Ondarroa on 17 May 1991, a town in the region of Vizcaya in the Basque Country, Iñigo Martinez Berridi comes to Barça with a wealth of experience in La Liga behind him. First with Real Sociedad and then Athletic Club, Martínez has made more than 350 appearances in the league, scoring 22 goals.",
+    "stats": {
+      "games": 25,
+      "goals": 0,
+      "assists": 0,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 25,
+        "goals": 0,
+        "assists": 0
+      }
+    },
+    "honors": {
+      "laLiga": 0,
+      "championsLeague": 0,
+      "copaDelRey": 2,
+      "clubWorldCup": 0
+    }
+  },
+  {
+    "id": "7",
+    "name": "Andreas Christensen",
+    "position": "defender",
+    "image": "/assets/images/15-ANDREAS_CHRISTENSEN.webp",
+    "placeOfBirth": "Lillerød, Denmark",
+    "dateOfBirth": "1996-04-10",
+    "weight": 82,
+    "height": 187,
+    "biography": "An excellent reader of the game and versatile centre back, Andreas Christensen (10 April 1996) was born in Lillerød (Denmark) where he started out at IF Skjold Birkerød, soon catching the eye of Brøndby IF.",
+    "stats": {
+      "games": 74,
+      "goals": 4,
+      "assists": 3,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 42,
+        "goals": 3,
+        "assists": 2
+      }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 1,
+      "copaDelRey": 0,
+      "clubWorldCup": 1
+    }
+  },
+  {
+    "id": "8",
+    "name": "Marcos Alonso",
+    "position": "defender",
+    "image": "/assets/images/17-MARCOS_ALONSO.webp",
+    "placeOfBirth": "Madrid, Spain",
+    "dateOfBirth": "1990-12-28",
+    "weight": 85,
+    "height": 189,
+    "biography": "A full back who can also play as wing back and a threat from set pieces, Marcos Alson was born in Madrid on 28 December 1990 and comes from a family with a strong footballing tradition. His great grandfather, Luís Zabala; his grandfather, Marcos Alonso Imaz, Marquitos and his father, Marcos Alonso Peña; were all professional footballers. His father and great grandfather both did do for Barça.",
+    "stats": {
+      "games": 74,
+      "goals": 4,
+      "assists": 3,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 42,
+        "goals": 3,
+        "assists": 2
+      }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 1,
+      "copaDelRey": 0,
+      "clubWorldCup": 1
+    }
+  },
+  {
+    "id": "9",
+    "name": "Jules Kounde",
+    "position": "defender",
+    "image": "/assets/images/23-JULES_KOUNDE.webp",
+    "placeOfBirth": "Paris, France",
+    "dateOfBirth": "1998-11-12",
+    "weight": 75,
+    "height": 178,
+    "biography": "Jules Kounde was born in Paris on November 12, 1998. His family originally came from Benin. He started playing for small clubs in the outskirts of Bordeaux in Southwest France. He first passed a trial at the age of 14 years old and joined the youth ranks of the professional team, FC Girondins de Bordeaux.",
+    "stats": {
+      "games": 74,
+      "goals": 4,
+      "assists": 3,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 42,
+        "goals": 3,
+        "assists": 2
+      }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 0,
+      "copaDelRey": 1,
+      "clubWorldCup": 0
+    }
+  },
+  {
+    "id": "10",
+    "name": "Gavi",
+    "position": "midfielder",
+    "image": "/assets/images/30-GAVI_.webp",
+    "placeOfBirth": "Los Palacios y Villafranca, Spain",
+    "dateOfBirth": "2004-08-05",
+    "weight": 68,
+    "height": 173,
+    "biography": "A combative and technically gifted midfielder Pablo Páez Gavira, better known as 'Gavi', was born in the town of Los Palacios y Villafranca near Seville. As a youngster he made his way to the youth system at Real Betis where he spent two seasons representing the verdiblancos at the Luis del Sol training complex just a stone's throw from the Benito Villamarín stadium.",
+    "stats": {
+      "games": 74,
+      "goals": 4,
+      "assists": 3,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 42,
+        "goals": 3,
+        "assists": 2
+      }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 0,
+      "copaDelRey": 1,
+      "clubWorldCup": 0
+    }
+  },
+  {
+    "id": "11",
+    "name": "Pedri",
+    "position": "midfielder",
+    "image": "/assets/images/08-PEDRI.webp",
+    "placeOfBirth": "Tegueste, Spain",
+    "dateOfBirth": "2002-11-25",
+    "weight": 60,
+    "height": 174,
+    "biography": "On September 2, 2019, FC Barcelona and Las Palmas reached an agreement for the transfer of Pedri. However, the Canarian player didn't join the blaugranes until August 2020. Born in Tegueste, Tenerife, on November 25, 2002, he began his football career in the team from his hometown.",
+    "stats": {
+      "games": 143,
+      "goals": 20,
+      "assists": 13,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 34,
+        "goals": 4,
+        "assists": 5
+      }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 0,
+      "copaDelRey": 1,
+      "clubWorldCup": 0
+    }
+  },
+  {
+    "id": "12",
+    "name": "Fermín López",
+    "position": "midfielder",
+    "image": "/assets/images/mini_16-FERMIN.webp",
+    "placeOfBirth": "El Campillo, Spain",
+    "dateOfBirth": "2003-05-11",
+    "weight": 70,
+    "height": 175,
+    "biography": "Fermín López Marín was part of the Campillo youth setup in his home town, and then signed for Recreativo Huelva. After one season, in 2011/12 he moved to Real Betis Balompié and four years later entered La Masía as an U14.",
+    "stats": {
+      "games": 143,
+      "goals": 20,
+      "assists": 13,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 34,
+        "goals": 4,
+        "assists": 5
+      }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 0,
+      "copaDelRey": 1,
+      "clubWorldCup": 0
+    }
+  },
+  {
+    "id": "13",
+    "name": "Oriol Romeu",
+    "position": "midfielder",
+    "image": "/assets/images/jugador_fitxa-oriol_romeu.webp",
+    "placeOfBirth": "Ulldecona, Spain",
+    "dateOfBirth": "1991-09-24",
+    "weight": 83,
+    "height": 183,
+    "biography": "Oriol Romeu Vidal (24 September 1991) started out in the Espanyol youth system before moving to La Masía at Barça in 2004. He received his footballing education at the Club, going through the different age groups until he established himself in Barça Atlètic, coached at the time by Luis Enrique. He also played two competitive games for the Barça first team under Pep Guardiola during the 2010/11 season.",
+    "stats": {
+      "games": 39,
+      "assists": 1,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 37,
+        "assists": 1
+      }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 0,
+      "copaDelRey": 1,
+      "clubWorldCup": 0
+    }
+  },
+  {
+    "id": "14",
+    "name": "Sergi Roberto",
+    "position": "midfielder",
+    "image": "/assets/images/20-S_ROBERTO.webp",
+    "placeOfBirth": "Reus, Spain",
+    "dateOfBirth": "1992-02-07",
+    "weight": 73,
+    "height": 178,
+    "biography": "When Sergi Roberto was 14 years old he traded the town of Reus for La Masia. The ex-Nàstic Tarragona midfielder improved year after year until he became a crucial player for Luis Enrique’s Barça B team.",
+    "stats": {
+      "games": 373,
+      "goals": 19,
+      "assists": 43,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 24,
+        "goals": 3,
+        "assists": 3
+      }
+    },
+    "honors": {
+      "laLiga": 7,
+      "championsLeague": 2,
+      "copaDelRey": 6,
+      "clubWorldCup": 3
+    }
+  },
+  {
+    "id": "15",
+    "name": "Frenkie de Jong",
+    "position": "midfielder",
+    "image": "/assets/images/21-FRENKIE_DE_JONG.webp",
+    "placeOfBirth": "Arkel, Netherlands",
+    "dateOfBirth": "1997-05-12",
+    "weight": 74,
+    "height": 181,
+    "biography": "Frenkie de Jong was born in Arkel (Netherlands) on May 12, 1997. The Barça player started his career at Willem II in the Eredivise, the Dutch first division. In 2016 he signed for Ajax, where he gradually gained a place in the starting eleven. His versatility and his great vision allowed him to become the midfield organiser for the team from Amsterdam.",
+    "stats": {
+      "games": 213,
+      "goals": 17,
+      "assists": 19,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 30,
+        "goals": 2,
+        "assists": 0
+      }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 0,
+      "copaDelRey": 1,
+      "clubWorldCup": 0
+    }
+  },
+  {
+    "id": "16",
+    "name": "Ilkay Gündogan",
+    "position": "midfielder",
+    "image": "/assets/images/jugador_fitxa-gundogan.webp",
+    "placeOfBirth": "Gelsenkirchen, Germany",
+    "dateOfBirth": "1990-10-24",
+    "weight": 80,
+    "height": 180,
+    "biography": "İlkay Gündoğan (24 October 1990, Gelsenkirchen, Germany), born to a Turkish family, is a midfielder who joined Barça in the summer of 2023 shortly after winning the Champions League as Manchester City captain and being a fundamental part of the all-conquering sky blue squad.",
+    "stats": {
+      "games": 51,
+      "goals": 5,
+      "assists": 14,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 51,
+        "goals": 5,
+        "assists": 14
+      }
+    },
+    "honors": {
+      "laLiga": 0,
+      "championsLeague": 2,
+      "copaDelRey": 0,
+      "clubWorldCup": 1
+    }
+  },
+  {
+    "id": "17",
+    "name": "Ferran Torres",
+    "position": "forward",
+    "image": "/assets/images/11-FERRAN_TORRES.webp",
+    "placeOfBirth": "Foios, Spain",
+    "dateOfBirth": "2000-02-29",
+    "weight": 77,
+    "height": 184,
+    "biography": "Born on 29 February 2000 in Foios (Valencia), Ferran Torres made first contact with the ball at an early age. He started out with futsal at the EPLA school and then attracted the attention of the Valencia CF academy. He was only seven years when he wore the shirt for the first time.",
+    "stats": {
+      "games": 113,
+      "goals": 25,
+      "assists": 12,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 42,
+        "goals": 11,
+        "assists": 3
+      }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 0,
+      "copaDelRey": 1,
+      "clubWorldCup": 0
+    }
+  },
+  {
+    "id": "18",
+    "name": "Robert Lewandowski",
+    "position": "forward",
+    "image": "/assets/images/09-ROBERT_LEWANDOWSKI.webp",
+    "placeOfBirth": "Warszawa, Poland",
+    "dateOfBirth": "1988-08-21",
+    "weight": 81,
+    "height": 185,
+    "biography": "The striker from Poland stands out for his goalscoring abilities. Inside the box he has all the tools to make him a difficult striker to read as he can find the net with his head and both feet with equal precision.",
+    "stats": {
+      "games": 95,
+      "goals": 59,
+      "assists": 17,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 49,
+        "goals": 26,
+        "assists": 9
+      }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 1,
+      "copaDelRey": 0,
+      "clubWorldCup": 1
+    }
+  },
+  {
+    "id": "19",
+    "name": "Raphinha",
+    "position": "forward",
+    "image": "/assets/images/22-RAPHINHA.webp",
+    "placeOfBirth": "Porto Alegre, Brazil",
+    "dateOfBirth": "1996-12-14",
+    "weight": 68,
+    "height": 176,
+    "biography": "A technically proficient winger, with good dribbling, decision making and  an appealing and attractive style of play Raphael Dias Belloli (Raphinha) was born on 14 December 1996 in Porto Alegre, Brazil. He joined the Club from Leeds United in summer 2022.",
+    "stats": {
+      "games": 87,
+      "goals": 20,
+      "assists": 23,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 37,
+        "goals": 10,
+        "assists": 11
+      }
+    },
+    "honors": {
+      "laLiga": 1,
+      "championsLeague": 0,
+      "copaDelRey": 1,
+      "clubWorldCup": 0
+    }
+  },
+  {
+    "id": "20",
+    "name": "João Félix",
+    "position": "forward",
+    "image": "/assets/images/jugador_fitxa-felix.webp",
+    "placeOfBirth": "Viseu, Portugal",
+    "dateOfBirth": "1999-11-10",
+    "weight": 70,
+    "height": 181,
+    "biography": "Joao Félix Sequeira (10 November 1999) was born in Viseu, Portugal. About 80 km from home, he rose up through the ranks at Porto, but it was at Benfica where he turned professional, making his debut in 2018/2019. His performances in 43 competitive games that season earned him the coveted Golden Boy award.",
+    "stats": {
+      "games": 44,
+      "goals": 10,
+      "assists": 6,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 44,
+        "goals": 10,
+        "assists": 6
+      }
+    },
+    "honors": {
+      "laLiga": 0,
+      "championsLeague": 0,
+      "copaDelRey": 1,
+      "clubWorldCup": 0
+    }
+  },
+  {
+    "id": "21",
+    "name": "Vitor Roque",
+    "position": "forward",
+    "image": "/assets/images/19-VITOR_ROQUE.webp",
+    "placeOfBirth": "Timóteo, Brazil",
+    "dateOfBirth": "2005-02-28",
+    "weight": 78,
+    "height": 174,
+    "biography": "Vitor Roque (Timóteo, 28 February 2005) arrived at Barça in the winter window of the 2023/24 season after his signing was announced in summer 2023.",
+    "stats": {
+      "games": 16,
+      "goals": 2,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 16,
+        "goals": 2
+      }
+    },
+    "honors": {
+      "laLiga": 0,
+      "championsLeague": 0,
+      "copaDelRey": 0,
+      "clubWorldCup": 0
     }
   }
 ]
