@@ -9,25 +9,30 @@ import { Player } from '../../models/player.interface';
   styleUrl: './player-details.component.scss',
 })
 export class PlayerDetailsComponent implements OnInit {
-  player: Player  | undefined;
+  player: Player | undefined;
 
   constructor(
     private route: ActivatedRoute,
     private playerService: PlayerService
   ) {}
 
-  ngOnInit(): void {
+
+   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       const playerId = params.get('id');
       if (playerId) {
         this.loadPlayerDetails(playerId);
       }
     });
+
+    console.log('ngoninit de player details');
   }
 
   loadPlayerDetails(playerId: string): void {
     this.playerService.getPlayerById(playerId).subscribe(player => {
       this.player = player;
     });
-  }
+
+    console.log('load player details');
+  } 
 }
