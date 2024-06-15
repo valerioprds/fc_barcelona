@@ -1,8 +1,21 @@
-.container {
+@import "../../app.component.scss";
+
+
+.container-fluid {
+  background: rgb(24, 23, 51);
+  background: linear-gradient(
+    90deg,
+    rgba(24, 23, 51, 1) 0%,
+    rgba(22, 47, 96, 1) 100%
+  );
   .card {
     background-color: #f8f9fa;
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    color: $primary-color;
   }
 
   .img-fluid {

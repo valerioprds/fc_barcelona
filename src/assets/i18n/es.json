@@ -1,3 +1,16 @@
 {
-  "hello": "hola mundo"
+  "GOALKEEPERS": "Porteros",
+  "DEFENDERS": "Defensores",
+  "MIDFIELDERS": "Centrocampistas",
+  "FORWARDS": "Delanteros",
+  "NAV_GOALKEEPERS": "Porteros",
+  "NAV_DEFENDERS": "Defensores",
+  "NAV_MIDFIELDERS": "Centrocampistas",
+  "NAV_FORWARDS": "Delanteros",
+  "GAMES": "Partidos",
+  "CLEAN_SHEETS": "Porterías a cero",
+  "SAVES": "Paradas",
+  "GOALS": "Goles",
+  "ASSISTS": "Asistencias",
+  "VIEW_STATS": "Ver Estadísticas"
 }

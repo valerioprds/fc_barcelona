@@ -1,3 +1,16 @@
 {
-  "hello": "hello world!"
+  "GOALKEEPERS": "Goalkeepers",
+  "DEFENDERS": "Defenders",
+  "MIDFIELDERS": "Midfielders",
+  "FORWARDS": "Forwards",
+  "NAV_GOALKEEPERS": "Goalkeepers",
+  "NAV_DEFENDERS": "Defenders",
+  "NAV_MIDFIELDERS": "Midfielders",
+  "NAV_FORWARDS": "Forwards",
+  "GAMES": "Games",
+  "CLEAN_SHEETS": "Clean Sheets",
+  "SAVES": "Saves",
+  "GOALS": "Goals",
+  "ASSISTS": "Assists",
+  "VIEW_STATS": "View Stats"
 }
