@@ -1,18 +1,98 @@
-<div *ngIf="player">
-  <h2>{{ player.name }}</h2>
-  <img [src]="player.image" alt="{{ player.name }}" class="img-fluid" />
-  <p>Place of Birth: {{ player.placeOfBirth }}</p>
-  <p>Date of Birth: {{ player.dateOfBirth | date }}</p>
-  <p>Weight: {{ player.weight }} kg</p>
-  <p>Height: {{ player.height }} cm</p>
-  <p>Games: {{ player.stats.games }}</p>
-  <p>Clean Sheets: {{ player.stats.cleanSheets }}</p>
-  <p>Saves: {{ player.stats.saves }}</p>
-  <!-- seasons Section-->
-  <p>
-    Seasons: {{ player.stats.seasons.start }}/{{ player.stats.seasons.end }}
-  </p>
-  <p>Games: {{ player.stats.seasons.games }}</p>
-  <p>Clean Sheets per season: {{ player.stats.seasons.cleanSheets }}</p>
-  <p>Saves per season: {{ player.stats.seasons.saves }}</p>
+<div class="container mt-4" *ngIf="player">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-6">
+          <div class="card mb-2">
+            <div class="card-body">
+              <h5 class="card-title">Place of Birth</h5>
+              <p class="card-text">{{ player.placeOfBirth }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card mb-2">
+            <div class="card-body">
+              <h5 class="card-title">Date of Birth</h5>
+              <p class="card-text">{{ player.dateOfBirth | date }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card mb-2">
+            <div class="card-body">
+              <h5 class="card-title">Weight</h5>
+              <p class="card-text">{{ player.weight }} kg</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card mb-2">
+            <div class="card-body">
+              <h5 class="card-title">Height</h5>
+              <p class="card-text">{{ player.height }} cm</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card mb-2">
+            <div class="card-body">
+              <h5 class="card-title">Games</h5>
+              <p class="card-text">{{ player.stats.games }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6" *ngIf="player.stats.cleanSheets">
+          <div class="card mb-2">
+            <div class="card-body">
+              <h5 class="card-title">Clean Sheets</h5>
+              <p class="card-text">{{ player.stats.cleanSheets }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6" *ngIf="player.stats.saves">
+          <div class="card mb-2">
+            <div class="card-body">
+              <h5 class="card-title">Saves</h5>
+              <p class="card-text">{{ player.stats.saves }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="card mb-2">
+            <div class="card-body">
+              <h5 class="card-title">Seasons</h5>
+              <p class="card-text">
+                {{ player.stats.seasons.start }}/{{ player.stats.seasons.end }}
+              </p>
+              <p class="card-text">Games: {{ player.stats.seasons.games }}</p>
+              <p class="card-text" *ngIf="player.stats.seasons.cleanSheets">
+                Clean Sheets: {{ player.stats.seasons.cleanSheets }}
+              </p>
+              <p class="card-text" *ngIf="player.stats.seasons.saves">
+                Saves: {{ player.stats.seasons.saves }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <img
+        [src]="player.image"
+        alt="{{ player.name }}"
+        class="img-fluid rounded"
+      />
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Biography</h5>
+          <p class="card-text">{{ player.biography }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

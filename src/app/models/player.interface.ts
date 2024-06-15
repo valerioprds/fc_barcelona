@@ -7,6 +7,7 @@ export interface Player {
   dateOfBirth: string;
   weight: number;
   height: number;
+  biography: string;
   stats: {
     games: number;
     cleanSheets?: number;
