@@ -1,18 +1,26 @@
 export interface Player {
   id: string;
   name: string;
-  image: string;
   position: string;
+  image: string;
+  placeOfBirth: string;
+  dateOfBirth: string;
+  weight: number;
+  height: number;
   stats: {
-    games?: number;
+    games: number;
     cleanSheets?: number;
     saves?: number;
-    seasons?: {
-      start?: number;
-      end?: number;
-      games?: number;
+    goals?: number;
+    assists?: number;
+    seasons: {
+      start: number;
+      end: number;
+      games: number;
       cleanSheets?: number;
       saves?: number;
+      goals?: number;
+      assists?: number;
     };
   };
 }
