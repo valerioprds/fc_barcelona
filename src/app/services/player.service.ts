@@ -1,31 +1,25 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable, map } from 'rxjs';
+import { Player } from '../models/player.interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PlayerService {
 
-  private players = [
-    { id: 1, nombre: 'Jugador 1', estadisticas: { puntos: 20, asistencias: 5, rebotes: 10 } },
-    { id: 2, nombre: 'Jugador 2', estadisticas: { puntos: 25, asistencias: 7, rebotes: 12 } },
-    // Agrega más jugadores aquí
-  ];
 
+  private jsonUrl = '/assets/players/players.json';
 
+  constructor(private http: HttpClient) { }
 
-
-  constructor() { }
-
-
-
-
-  getPlayers() {
-    return this.players;
+  getPlayers(): Observable<Player[]> {
+    return this.http.get<Player[]>(this.jsonUrl);
   }
 
-
-  getPlayer(id: number) {
-    return this.players.find(player => player.id === id);
-    
+  getPlayerById(id: string): Observable<Player> {
+    return this.http.get<Player[]>(this.jsonUrl).pipe(
+      map(players => players.find(player => player.id === id) as Player)
+    );
   }
 }

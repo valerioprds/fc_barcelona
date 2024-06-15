@@ -1,0 +1,6 @@
+<div *ngIf="player">
+  <h2>{{ player.name }}</h2>
+  <img [src]="player.image" alt="{{ player.name }}" class="img-fluid">
+  <p>Goals: {{ player.stats.goals }}</p>
+  <p>Assists: {{ player.stats.assists }}</p>
+</div>

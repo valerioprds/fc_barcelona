@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "name": "Player One",
+    "image": "assets/images/player1.jpg",
+    "stats": {
+      "goals": 10,
+      "assists": 5
+    }
+  },
+  {
+    "id": "2",
+    "name": "Player Two",
+    "image": "assets/images/player2.jpg",
+    "stats": {
+      "goals": 8,
+      "assists": 7
+    }
+  }
+]
