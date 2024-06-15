@@ -31,8 +31,147 @@
         "start": 2023,
         "end": 2024,
         "games": 36,
-        "clean sheets": 17,
+        "cleansheets": 17,
         "saves": 96
+      }
+    }
+  },
+
+  {
+    "id": "3",
+    "name": "João Cancelo",
+    "position": "defender",
+
+    "image": "/assets/images/Cancelo.webp",
+    "stats": {
+      "games": 42,
+      "goals": 4,
+      "assists": 5,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 42,
+        "goals": 42,
+        "assists": 5
+      }
+    }
+  },
+  {
+    "id": "4",
+    "name": "Alejandro Balde",
+    "position": "defender",
+
+    "image": "/assets/images/mini_28-BALDE.webp",
+    "stats": {
+      "games": 80,
+      "goals": 2,
+      "assists": 7,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 28,
+        "goals": 1,
+        "assists":1
+      }
+    }
+  },
+
+  {
+    "id": "5",
+    "name": "Ronald Araujo",
+    "position": "defender",
+
+    "image": "/assets/images/04-RONALD_ARAUJO_.webp",
+    "stats": {
+      "games": 150,
+      "goals": 8,
+      "assists": 5,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 37,
+        "goals": 1,
+        "assists":2
+      }
+    }
+  },
+
+
+  {
+    "id": "6",
+    "name": "Iñigo Martínez",
+    "position": "defender",
+
+    "image": "/assets/images/jugador_fitxa_inigo_2023.webp",
+    "stats": {
+      "games": 25,
+
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 25
+
+      }
+    }
+  },
+
+  {
+    "id": "6",
+    "name": "Andreas Christensen",
+    "position": "defender",
+
+    "image": "/assets/images/15-ANDREAS_CHRISTENSEN.webp",
+    "stats": {
+      "games": 74,
+      "goals": 4,
+      "assists": 3,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 42,
+        "goals": 3,
+        "assists":2
+      }
+    }
+  },
+
+
+  {
+    "id": "7",
+    "name": "Marcos Alonso",
+    "position": "defender",
+
+    "image": "/assets/images/17-MARCOS_ALONSO.webp",
+    "stats": {
+      "games": 74,
+      "goals": 4,
+      "assists": 3,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 42,
+        "goals": 3,
+        "assists":2
+      }
+    }
+  },
+
+  {
+    "id": "8",
+    "name": "Jules Kounde",
+    "position": "defender",
+
+    "image": "/assets/images/23-JULES_KOUNDE.webp",
+    "stats": {
+      "games": 74,
+      "goals": 4,
+      "assists": 3,
+      "seasons": {
+        "start": 2023,
+        "end": 2024,
+        "games": 42,
+        "goals": 3,
+        "assists":2
       }
     }
   }
