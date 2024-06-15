@@ -1,4 +1,10 @@
 <div class="container mt-4" *ngIf="player">
+  <div class="row mb-4">
+    <div class="col-12 text-center">
+      <h2>{{ player.name }}</h2>
+      <h4 class="text-muted">{{ player.position | titlecase }}</h4>
+    </div>
+  </div>
   <div class="row">
     <div class="col-md-8">
       <div class="row">
