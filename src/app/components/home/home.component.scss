@@ -1,0 +1,11 @@
+@import "../../app.component.scss";
+.container-fluid {
+  background-color: $background-color;
+}
+
+h2 {
+  color: $primary-color;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-top: 10px;
+}
