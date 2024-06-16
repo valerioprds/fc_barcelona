@@ -14,8 +14,10 @@ export interface Player {
     clubWorldCup: number;
 
   };
-  biography: string;
-  stats: {
+  biography: {
+    en: string;
+    es: string;
+  };  stats: {
     games: number;
     cleanSheets?: number;
     saves?: number;
