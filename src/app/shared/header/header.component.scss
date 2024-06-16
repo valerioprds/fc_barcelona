@@ -9,11 +9,6 @@
   );
 }
 
-.logo-img {
-  width: 70px;
-  height: 70px;
-  z-index: 100;
-}
 
 .shopping-button {
   background-color: $primary-color;
@@ -40,7 +35,7 @@
     }
 
     &:focus {
-      box-shadow: 0 0 0 0.2rem rgba(199, 20, 48, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(206, 186, 4, 0.5);
     }
   }
 
