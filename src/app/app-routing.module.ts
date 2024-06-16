@@ -6,6 +6,8 @@ import { PlayerDetailsComponent } from './components/player-details/player-detai
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'player/:id', component: PlayerDetailsComponent },
+  { path: '**', redirectTo: '', pathMatch: 'full' },
+
   // Other routes...
 ];
 @NgModule({

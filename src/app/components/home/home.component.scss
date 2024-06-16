@@ -3,7 +3,6 @@
   background-color: $background-color;
 }
 
-/* Add this CSS to your styles.css or equivalent file */
 .section-title {
   font-size: 2rem;
   font-weight: bold;
@@ -11,6 +10,13 @@
   padding-top: 20px;
 }
 
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
 h1 {
   color: $primary-color;
   font-size: 56px;
