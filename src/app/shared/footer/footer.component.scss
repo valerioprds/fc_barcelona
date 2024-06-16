@@ -1,6 +1,5 @@
 @import "../../app.component.scss";
 
-
 .container-fluid {
   background: rgb(199, 20, 48);
   background: linear-gradient(
@@ -8,4 +7,20 @@
     rgba(199, 20, 48, 1) 35%,
     rgba(35, 62, 125, 1) 100%
   );
+}
+
+/* fa-facebook fa-x-twitter  fa-instagram*/
+
+.fa-facebook {
+  font-size: 30px;
+  color: #1877f2;
+}
+.fa-x-twitter {
+  font-size: 30px;
+  color: #000000;
+}
+
+.fa-instagram {
+  font-size: 30px;
+  color: #e1306c;
 }

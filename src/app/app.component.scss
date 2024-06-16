@@ -1,2 +1,16 @@
-$primary-color: #FDC52C;
-$background-color: #181733
+$primary-color: #fdc52c;
+$background-color: #181733;
+
+.logo-img {
+  width: 70px;
+  height: 70px;
+}
+/* font-size: 30px;
+        font-weight: bold;
+        color: yellow; */
+
+.logo-text {
+  font-size: 30px;
+  font-weight: bold;
+  color: $primary-color;
+}
