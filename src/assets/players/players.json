@@ -8,7 +8,10 @@
     "dateOfBirth": "1992-04-30",
     "weight": 85,
     "height": 187,
-    "biography": "Marc-André ter Stegen signed for FC Barcelona in the summer of 2014 from Borussia Mönchengladbach. Born on 30 April 1992 in Mönchengladbach itself, the German did not take long to make his name as one Europe’s most promising young goalkeepers.",
+    "biography": {
+      "en": "Marc-André ter Stegen signed for FC Barcelona in the summer of 2014 from Borussia Mönchengladbach. Born on 30 April 1992 in Mönchengladbach itself, the German did not take long to make his name as one Europe’s most promising young goalkeepers.",
+      "es": "Marc-André ter Stegen firmó por el FC Barcelona en el verano de 2014 procedente del Borussia Mönchengladbach. Nacido el 30 de abril de 1992 en Mönchengladbach, el alemán no tardó en hacerse un nombre como uno de los porteros jóvenes más prometedores de Europa."
+    },
     "stats": {
       "games": 413,
       "cleanSheets": 173,
@@ -37,7 +40,10 @@
     "dateOfBirth": "1999-03-02",
     "weight": 77,
     "height": 184,
-    "biography": "Iñaki Peña signed for Alicante CF when he was just five years old. In 2009, Villarreal CF was interested in the precocious player, where he began to stand out, especially in 2011, when he was chosen as the best goalkeeper of the Arona tournament. Barça had its eye on him and a year later he came to the Masia.",
+    "biography": {
+      "en": "Iñaki Peña signed for Alicante CF when he was just five years old. In 2009, Villarreal CF was interested in the precocious player, where he began to stand out, especially in 2011, when he was chosen as the best goalkeeper of the Arona tournament. Barça had its eye on him and a year later he came to the Masia.",
+      "es": "Iñaki Peña firmó por el Alicante CF cuando tenía solo cinco años. En 2009, el Villarreal CF se interesó por el precoz jugador, donde comenzó a destacar, especialmente en 2011, cuando fue elegido como el mejor portero del torneo de Arona. El Barça puso los ojos en él y un año después llegó a la Masia."
+    },
     "stats": {
       "games": 413,
       "cleanSheets": 173,
@@ -66,7 +72,10 @@
     "dateOfBirth": "1994-05-27",
     "weight": 74,
     "height": 182,
-    "biography": "Born in Barreiro, Portugal, on 27 May 1991, João Cancelo started out playing in his hometown before joining Benfica at a young age.",
+    "biography": {
+      "en": "Born in Barreiro, Portugal, on 27 May 1994, João Cancelo started out playing in his hometown before joining Benfica at a young age.",
+      "es": "Nacido en Barreiro, Portugal, el 27 de mayo de 1994, João Cancelo comenzó a jugar en su ciudad natal antes de unirse al Benfica a una edad temprana."
+    },
     "stats": {
       "games": 42,
       "goals": 4,
@@ -95,7 +104,10 @@
     "dateOfBirth": "2003-10-18",
     "weight": 69,
     "height": 175,
-    "biography": "Alejandro Balde, born in Barcelona to Guinean and Dominican parents, is a fast and explosive full back who joined Barça in 2011 at the age of eight after coming up through ranks at Espanyol.",
+    "biography": {
+      "en": "Alejandro Balde, born in Barcelona to Guinean and Dominican parents, is a fast and explosive full back who joined Barça in 2011 at the age of eight after coming up through the ranks at Espanyol.",
+      "es": "Alejandro Balde, nacido en Barcelona de padres guineanos y dominicanos, es un lateral rápido y explosivo que se unió al Barça en 2011 a la edad de ocho años después de formarse en las filas del Espanyol."
+    },
     "stats": {
       "games": 80,
       "goals": 2,
@@ -124,7 +136,10 @@
     "dateOfBirth": "1999-03-07",
     "weight": 79,
     "height": 188,
-    "biography": "Ronald Araujo was born in Rivera, Uruguay, on 7 March 1999. The young central defender began playing professionally for his hometown team, and later joined the lower categories at Rentistas in the Uruguayan Second Division.",
+    "biography": {
+      "en": "Ronald Araujo was born in Rivera, Uruguay, on 7 March 1999. The young central defender began playing professionally for his hometown team, and later joined the lower categories at Rentistas in the Uruguayan Second Division.",
+      "es": "Ronald Araujo nació en Rivera, Uruguay, el 7 de marzo de 1999. El joven defensa central comenzó a jugar profesionalmente para el equipo de su ciudad natal y luego se unió a las categorías inferiores de Rentistas en la Segunda División uruguaya."
+    },
     "stats": {
       "games": 150,
       "goals": 8,
@@ -153,7 +168,10 @@
     "dateOfBirth": "1991-05-17",
     "weight": 81,
     "height": 182,
-    "biography": "Born in Ondarroa on 17 May 1991, a town in the region of Vizcaya in the Basque Country, Iñigo Martinez Berridi comes to Barça with a wealth of experience in La Liga behind him. First with Real Sociedad and then Athletic Club, Martínez has made more than 350 appearances in the league, scoring 22 goals.",
+    "biography": {
+      "en": "Born in Ondarroa on 17 May 1991, a town in the region of Vizcaya in the Basque Country, Iñigo Martinez Berridi comes to Barça with a wealth of experience in La Liga behind him. First with Real Sociedad and then Athletic Club, Martínez has made more than 350 appearances in the league, scoring 22 goals.",
+      "es": "Nacido en Ondarroa el 17 de mayo de 1991, un pueblo en la región de Vizcaya en el País Vasco, Iñigo Martínez Berridi llega al Barça con una gran experiencia en La Liga a sus espaldas. Primero con la Real Sociedad y luego con el Athletic Club, Martínez ha disputado más de 350 partidos en la liga, anotando 22 goles."
+    },
     "stats": {
       "games": 25,
       "goals": 0,
@@ -182,7 +200,10 @@
     "dateOfBirth": "1996-04-10",
     "weight": 82,
     "height": 187,
-    "biography": "An excellent reader of the game and versatile centre back, Andreas Christensen (10 April 1996) was born in Lillerød (Denmark) where he started out at IF Skjold Birkerød, soon catching the eye of Brøndby IF.",
+    "biography": {
+      "en": "An excellent reader of the game and versatile centre back, Andreas Christensen (10 April 1996) was born in Lillerød (Denmark) where he started out at IF Skjold Birkerød, soon catching the eye of Brøndby IF.",
+      "es": "Un excelente lector del juego y versátil defensa central, Andreas Christensen (10 de abril de 1996) nació en Lillerød (Dinamarca) donde comenzó en el IF Skjold Birkerød, pronto llamando la atención del Brøndby IF."
+    },
     "stats": {
       "games": 74,
       "goals": 4,
@@ -211,7 +232,10 @@
     "dateOfBirth": "1990-12-28",
     "weight": 85,
     "height": 189,
-    "biography": "A full back who can also play as wing back and a threat from set pieces, Marcos Alson was born in Madrid on 28 December 1990 and comes from a family with a strong footballing tradition. His great grandfather, Luís Zabala; his grandfather, Marcos Alonso Imaz, Marquitos and his father, Marcos Alonso Peña; were all professional footballers. His father and great grandfather both did do for Barça.",
+    "biography": {
+      "en": "A full back who can also play as wing back and a threat from set pieces, Marcos Alson was born in Madrid on 28 December 1990 and comes from a family with a strong footballing tradition. His great grandfather, Luís Zabala; his grandfather, Marcos Alonso Imaz, Marquitos and his father, Marcos Alonso Peña; were all professional footballers. His father and great grandfather both did so for Barça.",
+      "es": "Un lateral que también puede jugar como carrilero y una amenaza en jugadas a balón parado, Marcos Alonso nació en Madrid el 28 de diciembre de 1990 y proviene de una familia con una fuerte tradición futbolística. Su bisabuelo, Luís Zabala; su abuelo, Marcos Alonso Imaz, Marquitos y su padre, Marcos Alonso Peña; fueron todos futbolistas profesionales. Su padre y su bisabuelo jugaron para el Barça."
+    },
     "stats": {
       "games": 74,
       "goals": 4,
@@ -240,7 +264,10 @@
     "dateOfBirth": "1998-11-12",
     "weight": 75,
     "height": 178,
-    "biography": "Jules Kounde was born in Paris on November 12, 1998. His family originally came from Benin. He started playing for small clubs in the outskirts of Bordeaux in Southwest France. He first passed a trial at the age of 14 years old and joined the youth ranks of the professional team, FC Girondins de Bordeaux.",
+    "biography": {
+      "en": "Jules Kounde was born in Paris on November 12, 1998. His family originally came from Benin. He started playing for small clubs in the outskirts of Bordeaux in Southwest France. He first passed a trial at the age of 14 years old and joined the youth ranks of the professional team, FC Girondins de Bordeaux.",
+      "es": "Jules Kounde nació en París el 12 de noviembre de 1998. Su familia es originaria de Benin. Comenzó a jugar en pequeños clubes en las afueras de Burdeos en el suroeste de Francia. Pasó su primera prueba a los 14 años y se unió a las categorías juveniles del equipo profesional, el FC Girondins de Bordeaux."
+    },
     "stats": {
       "games": 74,
       "goals": 4,
@@ -269,7 +296,10 @@
     "dateOfBirth": "2004-08-05",
     "weight": 68,
     "height": 173,
-    "biography": "A combative and technically gifted midfielder Pablo Páez Gavira, better known as 'Gavi', was born in the town of Los Palacios y Villafranca near Seville. As a youngster he made his way to the youth system at Real Betis where he spent two seasons representing the verdiblancos at the Luis del Sol training complex just a stone's throw from the Benito Villamarín stadium.",
+    "biography": {
+      "en": "A combative and technically gifted midfielder Pablo Páez Gavira, better known as 'Gavi', was born in the town of Los Palacios y Villafranca near Seville. As a youngster he made his way to the youth system at Real Betis where he spent two seasons representing the verdiblancos at the Luis del Sol training complex just a stone's throw from the Benito Villamarín stadium.",
+      "es": "Un centrocampista combativo y técnicamente dotado, Pablo Páez Gavira, más conocido como 'Gavi', nació en el pueblo de Los Palacios y Villafranca cerca de Sevilla. De joven llegó al sistema juvenil del Real Betis, donde pasó dos temporadas representando a los verdiblancos en el complejo de entrenamiento Luis del Sol, a solo un paso del estadio Benito Villamarín."
+    },
     "stats": {
       "games": 74,
       "goals": 4,
@@ -298,7 +328,10 @@
     "dateOfBirth": "2002-11-25",
     "weight": 60,
     "height": 174,
-    "biography": "On September 2, 2019, FC Barcelona and Las Palmas reached an agreement for the transfer of Pedri. However, the Canarian player didn't join the blaugranes until August 2020. Born in Tegueste, Tenerife, on November 25, 2002, he began his football career in the team from his hometown.",
+    "biography": {
+      "en": "On September 2, 2019, FC Barcelona and Las Palmas reached an agreement for the transfer of Pedri. However, the Canarian player didn't join the blaugranes until August 2020. Born in Tegueste, Tenerife, on November 25, 2002, he began his football career in the team from his hometown.",
+      "es": "El 2 de septiembre de 2019, el FC Barcelona y Las Palmas llegaron a un acuerdo para el traspaso de Pedri. Sin embargo, el jugador canario no se unió a los blaugranas hasta agosto de 2020. Nacido en Tegueste, Tenerife, el 25 de noviembre de 2002, comenzó su carrera futbolística en el equipo de su ciudad natal."
+    },
     "stats": {
       "games": 143,
       "goals": 20,
@@ -327,7 +360,10 @@
     "dateOfBirth": "2003-05-11",
     "weight": 70,
     "height": 175,
-    "biography": "Fermín López Marín was part of the Campillo youth setup in his home town, and then signed for Recreativo Huelva. After one season, in 2011/12 he moved to Real Betis Balompié and four years later entered La Masía as an U14.",
+    "biography": {
+      "en": "Fermín López Marín was part of the Campillo youth setup in his home town, and then signed for Recreativo Huelva. After one season, in 2011/12 he moved to Real Betis Balompié and four years later entered La Masía as an U14.",
+      "es": "Fermín López Marín formó parte de la cantera del Campillo en su ciudad natal, y luego firmó por el Recreativo Huelva. Después de una temporada, en 2011/12 se trasladó al Real Betis Balompié y cuatro años después ingresó en La Masía como U14."
+    },
     "stats": {
       "games": 143,
       "goals": 20,
@@ -356,7 +392,10 @@
     "dateOfBirth": "1991-09-24",
     "weight": 83,
     "height": 183,
-    "biography": "Oriol Romeu Vidal (24 September 1991) started out in the Espanyol youth system before moving to La Masía at Barça in 2004. He received his footballing education at the Club, going through the different age groups until he established himself in Barça Atlètic, coached at the time by Luis Enrique. He also played two competitive games for the Barça first team under Pep Guardiola during the 2010/11 season.",
+    "biography": {
+      "en": "Oriol Romeu Vidal (24 September 1991) started out in the Espanyol youth system before moving to La Masía at Barça in 2004. He received his footballing education at the Club, going through the different age groups until he established himself in Barça Atlètic, coached at the time by Luis Enrique. He also played two competitive games for the Barça first team under Pep Guardiola during the 2010/11 season.",
+      "es": "Oriol Romeu Vidal (24 de septiembre de 1991) comenzó en el sistema juvenil del Espanyol antes de trasladarse a La Masía del Barça en 2004. Recibió su educación futbolística en el Club, pasando por los diferentes grupos de edad hasta establecerse en el Barça Atlètic, dirigido en ese momento por Luis Enrique. También jugó dos partidos oficiales con el primer equipo del Barça bajo las órdenes de Pep Guardiola durante la temporada 2010/11."
+    },
     "stats": {
       "games": 39,
       "assists": 1,
@@ -383,7 +422,10 @@
     "dateOfBirth": "1992-02-07",
     "weight": 73,
     "height": 178,
-    "biography": "When Sergi Roberto was 14 years old he traded the town of Reus for La Masia. The ex-Nàstic Tarragona midfielder improved year after year until he became a crucial player for Luis Enrique’s Barça B team.",
+    "biography": {
+      "en": "When Sergi Roberto was 14 years old he traded the town of Reus for La Masia. The ex-Nàstic Tarragona midfielder improved year after year until he became a crucial player for Luis Enrique’s Barça B team.",
+      "es": "Cuando Sergi Roberto tenía 14 años cambió la ciudad de Reus por La Masia. El ex centrocampista del Nàstic Tarragona mejoró año tras año hasta convertirse en un jugador crucial para el Barça B de Luis Enrique."
+    },
     "stats": {
       "games": 373,
       "goals": 19,
@@ -412,7 +454,10 @@
     "dateOfBirth": "1997-05-12",
     "weight": 74,
     "height": 181,
-    "biography": "Frenkie de Jong was born in Arkel (Netherlands) on May 12, 1997. The Barça player started his career at Willem II in the Eredivise, the Dutch first division. In 2016 he signed for Ajax, where he gradually gained a place in the starting eleven. His versatility and his great vision allowed him to become the midfield organiser for the team from Amsterdam.",
+    "biography": {
+      "en": "Frenkie de Jong was born in Arkel (Netherlands) on May 12, 1997. The Barça player started his career at Willem II in the Eredivise, the Dutch first division. In 2016 he signed for Ajax, where he gradually gained a place in the starting eleven. His versatility and his great vision allowed him to become the midfield organiser for the team from Amsterdam.",
+      "es": "Frenkie de Jong nació en Arkel (Países Bajos) el 12 de mayo de 1997. El jugador del Barça comenzó su carrera en el Willem II en la Eredivise, la primera división holandesa. En 2016 firmó por el Ajax, donde gradualmente se ganó un lugar en el once inicial. Su versatilidad y su gran visión le permitieron convertirse en el organizador del mediocampo del equipo de Ámsterdam."
+    },
     "stats": {
       "games": 213,
       "goals": 17,
@@ -441,7 +486,10 @@
     "dateOfBirth": "1990-10-24",
     "weight": 80,
     "height": 180,
-    "biography": "İlkay Gündoğan (24 October 1990, Gelsenkirchen, Germany), born to a Turkish family, is a midfielder who joined Barça in the summer of 2023 shortly after winning the Champions League as Manchester City captain and being a fundamental part of the all-conquering sky blue squad.",
+    "biography": {
+      "en": "İlkay Gündoğan (24 October 1990, Gelsenkirchen, Germany), born to a Turkish family, is a midfielder who joined Barça in the summer of 2023 shortly after winning the Champions League as Manchester City captain and being a fundamental part of the all-conquering sky blue squad.",
+      "es": "İlkay Gündoğan (24 de octubre de 1990, Gelsenkirchen, Alemania), nacido en una familia turca, es un centrocampista que se unió al Barça en el verano de 2023 poco después de ganar la Liga de Campeones como capitán del Manchester City y siendo una parte fundamental del equipo celeste."
+    },
     "stats": {
       "games": 51,
       "goals": 5,
@@ -470,7 +518,10 @@
     "dateOfBirth": "2000-02-29",
     "weight": 77,
     "height": 184,
-    "biography": "Born on 29 February 2000 in Foios (Valencia), Ferran Torres made first contact with the ball at an early age. He started out with futsal at the EPLA school and then attracted the attention of the Valencia CF academy. He was only seven years when he wore the shirt for the first time.",
+    "biography": {
+      "en": "Born on 29 February 2000 in Foios (Valencia), Ferran Torres made first contact with the ball at an early age. He started out with futsal at the EPLA school and then attracted the attention of the Valencia CF academy. He was only seven years when he wore the shirt for the first time.",
+      "es": "Nacido el 29 de febrero de 2000 en Foios (Valencia), Ferran Torres hizo su primer contacto con el balón a una edad temprana. Comenzó con el fútbol sala en la escuela EPLA y luego atrajo la atención de la academia del Valencia CF. Tenía solo siete años cuando vistió la camiseta por primera vez."
+    },
     "stats": {
       "games": 113,
       "goals": 25,
@@ -499,7 +550,10 @@
     "dateOfBirth": "1988-08-21",
     "weight": 81,
     "height": 185,
-    "biography": "The striker from Poland stands out for his goalscoring abilities. Inside the box he has all the tools to make him a difficult striker to read as he can find the net with his head and both feet with equal precision.",
+    "biography": {
+      "en": "The striker from Poland stands out for his goalscoring abilities. Inside the box he has all the tools to make him a difficult striker to read as he can find the net with his head and both feet with equal precision.",
+      "es": "El delantero polaco destaca por su capacidad goleadora. Dentro del área tiene todas las herramientas para hacer de él un delantero difícil de leer, ya que puede encontrar la red con la cabeza y ambos pies con igual precisión."
+    },
     "stats": {
       "games": 95,
       "goals": 59,
@@ -528,7 +582,10 @@
     "dateOfBirth": "1996-12-14",
     "weight": 68,
     "height": 176,
-    "biography": "A technically proficient winger, with good dribbling, decision making and  an appealing and attractive style of play Raphael Dias Belloli (Raphinha) was born on 14 December 1996 in Porto Alegre, Brazil. He joined the Club from Leeds United in summer 2022.",
+    "biography": {
+      "en": "A technically proficient winger, with good dribbling, decision making and an appealing and attractive style of play Raphael Dias Belloli (Raphinha) was born on 14 December 1996 in Porto Alegre, Brazil. He joined the Club from Leeds United in summer 2022.",
+      "es": "Un extremo técnicamente competente, con buen regate, toma de decisiones y un estilo de juego atractivo y atractivo. Raphael Dias Belloli (Raphinha) nació el 14 de diciembre de 1996 en Porto Alegre, Brasil. Se unió al Club procedente del Leeds United en el verano de 2022."
+    },
     "stats": {
       "games": 87,
       "goals": 20,
@@ -557,7 +614,10 @@
     "dateOfBirth": "1999-11-10",
     "weight": 70,
     "height": 181,
-    "biography": "Joao Félix Sequeira (10 November 1999) was born in Viseu, Portugal. About 80 km from home, he rose up through the ranks at Porto, but it was at Benfica where he turned professional, making his debut in 2018/2019. His performances in 43 competitive games that season earned him the coveted Golden Boy award.",
+    "biography": {
+      "en": "Joao Félix Sequeira (10 November 1999) was born in Viseu, Portugal. About 80 km from home, he rose up through the ranks at Porto, but it was at Benfica where he turned professional, making his debut in 2018/2019. His performances in 43 competitive games that season earned him the coveted Golden Boy award.",
+      "es": "Joao Félix Sequeira (10 de noviembre de 1999) nació en Viseu, Portugal. A unos 80 km de casa, ascendió en las filas del Oporto, pero fue en el Benfica donde se convirtió en profesional, debutando en la temporada 2018/2019. Sus actuaciones en 43 partidos oficiales esa temporada le valieron el codiciado premio Golden Boy."
+    },
     "stats": {
       "games": 44,
       "goals": 10,
@@ -586,7 +646,10 @@
     "dateOfBirth": "2005-02-28",
     "weight": 78,
     "height": 174,
-    "biography": "Vitor Roque (Timóteo, 28 February 2005) arrived at Barça in the winter window of the 2023/24 season after his signing was announced in summer 2023.",
+    "biography": {
+      "en": "Vitor Roque (Timóteo, 28 February 2005) arrived at Barça in the winter window of the 2023/24 season after his signing was announced in summer 2023.",
+      "es": "Vitor Roque (Timóteo, 28 de febrero de 2005) llegó al Barça en la ventana de invierno de la temporada 2023/24 después de que su fichaje se anunciara en el verano de 2023."
+    },
     "stats": {
       "games": 16,
       "goals": 2,
