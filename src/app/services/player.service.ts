@@ -17,9 +17,13 @@ export class PlayerService {
     return this.http.get<Player[]>(this.jsonUrl);
   }
 
+  //todo controlador de errores try catch console log throw error
+
   getPlayerById(id: string): Observable<Player> {
     return this.http.get<Player[]>(this.jsonUrl).pipe(
       map(players => players.find(player => player.id === id) as Player)
     );
   }
+
+  //
 }
