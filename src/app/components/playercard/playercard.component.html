@@ -1,0 +1,30 @@
+<div class="card player-card">
+  <div class="card-img-wrapper">
+    <img [src]="player.image" class="card-img-top" alt="{{ player.name }}" />
+    <div class="card-overlay">
+      <div class="overlay-content">
+        <h5>{{ player.name }}</h5>
+        <ng-container
+          *ngIf="player.position === 'goalkeeper'; else otherPositions"
+        >
+          <p>{{ "GAMES" | translate }}: {{ player.stats.games }}</p>
+          <p>
+            {{ "CLEAN_SHEETS" | translate }}: {{ player.stats.cleanSheets }}
+          </p>
+          <p>{{ "SAVES" | translate }}: {{ player.stats.saves }}</p>
+        </ng-container>
+        <ng-template #otherPositions>
+          <p>{{ "GAMES" | translate }}: {{ player.stats.games }}</p>
+          <p>{{ "GOALS" | translate }}: {{ player.stats.goals }}</p>
+          <p>{{ "ASSISTS" | translate }}: {{ player.stats.assists }}</p>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+  <div class="card-body text-center">
+    <h5 class="card-title">{{ player.name }}</h5>
+    <a [routerLink]="['/player', player.id]" class="btn btn-primary">
+      {{ "VIEW_STATS" | translate }}
+    </a>
+  </div>
+</div>
