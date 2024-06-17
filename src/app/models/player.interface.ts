@@ -12,7 +12,6 @@ export interface Player {
     championsLeague: number;
     copaDelRey: number;
     clubWorldCup: number;
-
   };
   biography: {
     en: string;
@@ -33,4 +32,6 @@ export interface Player {
       assists?: number;
     };
   };
+
+  //  todo modelaje de esta clase de jugador 
 }
