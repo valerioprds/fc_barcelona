@@ -1,105 +1,111 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { Router } from '@angular/router';
-import { of } from 'rxjs';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { HomeComponent } from './home.component';
 import { PlayerService } from '../../services/player.service';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import { Router } from '@angular/router';
+import { of } from 'rxjs';
 import { Player } from '../../models/player.interface';
+import { RouterTestingModule } from '@angular/router/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
   let fixture: ComponentFixture<HomeComponent>;
-  let playerServiceMock: any;
-  let routerMock: any;
-  let translateServiceMock: any;
+  let playerService: PlayerService;
+  let translateService: TranslateService;
+  let router: Router;
 
   const mockPlayers: Player[] = [
     {
       id: '1',
-      name: 'Player 1',
-      position: 'Goalkeeper',
-      image: 'player1.jpg',
-      placeOfBirth: 'City 1',
+      name: 'Player One',
+      placeOfBirth: 'City',
       dateOfBirth: '1990-01-01',
-      weight: 80,
+      weight: 70,
       height: 180,
-      biography: { en: 'Biography 1', es: 'Biografía 1' },
+      image: 'path/to/image.jpg',
+      position: 'goalkeeper',
+      honors: {
+        laLiga: 3,
+        championsLeague: 2,
+        copaDelRey: 1,
+        clubWorldCup: 1,
+      },
+      biography: {
+        en: 'Biography in English',
+        es: 'Biografía en español',
+      },
       stats: {
         games: 100,
         cleanSheets: 50,
         saves: 200,
-        seasons: {
-          start: 2010,
-          end: 2020,
-          games: 100,
-          cleanSheets: 50,
-          saves: 200,
-        },
-      },
-      honors: {
-        laLiga: 1,
-        championsLeague: 1,
-        copaDelRey: 1,
-        clubWorldCup: 1,
+        goals: 0,
+        assists: 0,
+        seasons: [
+          {
+            start: 2010,
+            end: 2011,
+            games: 30,
+            cleanSheets: 15,
+            saves: 60,
+            goals: 0,
+            assists: 0,
+          },
+        ],
       },
     },
   ];
 
-  beforeEach(() => {
-    playerServiceMock = {
-      getPlayers: jest.fn().mockReturnValue(of(mockPlayers)),
-    };
-
-    routerMock = {
-      navigate: jest.fn(),
-    };
-
-    translateServiceMock = {
-      setDefaultLang: jest.fn(),
-      use: jest.fn(),
-      currentLang: 'en',
-      onLangChange: of({ lang: 'en' }),
-    };
-
-    TestBed.configureTestingModule({
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
       declarations: [HomeComponent],
-      imports: [TranslateModule.forRoot()], // Import TranslateModule
+      imports: [
+        TranslateModule.forRoot(),
+        RouterTestingModule,
+        HttpClientTestingModule,
+      ],
       providers: [
-        { provide: PlayerService, useValue: playerServiceMock },
-        { provide: Router, useValue: routerMock },
-        { provide: TranslateService, useValue: translateServiceMock },
+        {
+          provide: PlayerService,
+          useValue: {
+            getPlayers: jest.fn().mockReturnValue(of(mockPlayers)),
+          },
+        },
+        TranslateService,
       ],
     }).compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(HomeComponent);
     component = fixture.componentInstance;
+    playerService = TestBed.inject(PlayerService);
+    translateService = TestBed.inject(TranslateService);
+    router = TestBed.inject(Router);
+    fixture.detectChanges();
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should set the default language to "en" on initialization', () => {
-    component.ngOnInit();
-    expect(translateServiceMock.setDefaultLang).toHaveBeenCalledWith('en');
-    expect(translateServiceMock.use).toHaveBeenCalledWith('en');
+  it('should set default language to English', () => {
+    expect(translateService.getDefaultLang()).toBe('en');
   });
 
-  it('should load players on init', () => {
-    component.ngOnInit();
-    expect(playerServiceMock.getPlayers).toHaveBeenCalled();
+  it('should fetch players on init', () => {
+    expect(component.players.length).toBe(1);
     expect(component.players).toEqual(mockPlayers);
   });
 
-  it('should navigate to player details', () => {
-    const playerId = '1';
-    component.navigateToPlayer(playerId);
-    expect(routerMock.navigate).toHaveBeenCalledWith(['player/', playerId]);
+  it('should switch language', () => {
+    component.switchLanguage('es');
+    expect(translateService.currentLang).toBe('es');
   });
 
-  it('should switch language', () => {
-    const language = 'es';
-    component.switchLanguage(language);
-    expect(translateServiceMock.use).toHaveBeenCalledWith(language);
+  it('should navigate to player details', () => {
+    const navigateSpy = jest.spyOn(router, 'navigate');
+    component.navigateToPlayer('1');
+    expect(navigateSpy).toHaveBeenCalledWith(['player/', '1']);
   });
 });

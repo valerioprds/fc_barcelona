@@ -10,15 +10,20 @@ import { Router } from '@angular/router';
 export class PlayerService {
   private jsonUrl = '/assets/players/players.json';
 
-  constructor(private http: HttpClient, private router: Router) {}
+  constructor(
+    private http: HttpClient,
+    private router: Router,
+  ) {}
 
   getPlayers(): Observable<Player[]> {
-    return this.http.get<Player[]>(this.jsonUrl);
+    return this.http.get<Player[]>(this.jsonUrl).pipe(
+      catchError((error) => {
+        console.error('Error fetching players:', error);
+        // Emitir un observable de error con un mensaje personalizado
+        return throwError('Failed to fetch players; please try again later.');
+      }),
+    );
   }
-
-  //todo controlador de errores try catch console log throw error
-
-
 
   getPlayerById(id: string): Observable<Player> {
     return this.http.get<Player[]>(this.jsonUrl).pipe(
@@ -35,7 +40,7 @@ export class PlayerService {
         this.router.navigate(['/error']);
         // Emitir un observable de error con un mensaje personalizado
         return throwError('Failed to fetch player; please try again later.');
-      })
+      }),
     );
   }
 }

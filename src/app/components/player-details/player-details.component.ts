@@ -7,7 +7,7 @@ import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-player-details',
   templateUrl: './player-details.component.html',
-  styleUrl: './player-details.component.scss',
+  styleUrls: ['./player-details.component.scss'],
 })
 export class PlayerDetailsComponent implements OnInit {
   player: Player | undefined;
@@ -16,7 +16,7 @@ export class PlayerDetailsComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private playerService: PlayerService,
-    private translate: TranslateService
+    private translate: TranslateService,
   ) {
     // Set the default language
     this.translate.setDefaultLang('en');
@@ -28,10 +28,6 @@ export class PlayerDetailsComponent implements OnInit {
     });
   }
 
-  switchLanguage(language: string) {
-    this.translate.use(language);
-  }
-
   ngOnInit(): void {
     this.route.paramMap.subscribe((params) => {
       const playerId = params.get('id');
@@ -41,11 +37,20 @@ export class PlayerDetailsComponent implements OnInit {
     });
   }
 
+  switchLanguage(language: string) {
+    this.translate.use(language);
+  }
+
   loadPlayerDetails(playerId: string): void {
-    this.playerService.getPlayerById(playerId).subscribe((player) => {
-      this.player = player;
-      this.updateBiography();
-    });
+    this.playerService.getPlayerById(playerId).subscribe(
+      (player) => {
+        this.player = player;
+        this.updateBiography();
+      },
+      (error) => {
+        console.error('Error fetching player details:', error);
+      },
+    );
   }
 
   updateBiography(): void {
