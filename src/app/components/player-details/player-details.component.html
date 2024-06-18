@@ -2,7 +2,6 @@
   <div class="row mb-4">
     <div class="col-12 text-center">
       <h2 class="fade-in">{{ player.name }}</h2>
-      <!-- <h4 class="fade-in">{{ player.position | titlecase }}</h4> -->
     </div>
   </div>
   <div class="row">
@@ -73,23 +72,44 @@
             </div>
           </div>
         </div>
+        <div class="col-6" *ngIf="player.stats.goals">
+          <div class="card mb-2 slide-in-right">
+            <div class="card-body">
+              <h5 class="card-title">{{ "GOALS" | translate }}</h5>
+              <p class="card-text">{{ player.stats.goals }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6" *ngIf="player.stats.assists">
+          <div class="card mb-2 slide-in-left">
+            <div class="card-body">
+              <h5 class="card-title">{{ "ASSISTS" | translate }}</h5>
+              <p class="card-text">{{ player.stats.assists }}</p>
+            </div>
+          </div>
+        </div>
         <div class="col-12">
           <div class="card mb-2 fade-in">
             <div class="card-body">
               <h5 class="card-title">{{ "SEASONS" | translate }}</h5>
-              <p class="card-text">
-                {{ player.stats.seasons.start }}/{{ player.stats.seasons.end }}
-              </p>
-              <p class="card-text">
-                {{ "GAMES" | translate }}: {{ player.stats.seasons.games }}
-              </p>
-              <p class="card-text" *ngIf="player.stats.seasons.cleanSheets">
-                {{ "CLEAN_SHEETS" | translate }}:
-                {{ player.stats.seasons.cleanSheets }}
-              </p>
-              <p class="card-text" *ngIf="player.stats.seasons.saves">
-                {{ "SAVES" | translate }}: {{ player.stats.seasons.saves }}
-              </p>
+              <div *ngFor="let season of player.stats.seasons">
+                <p class="card-text">{{ season.start }}/{{ season.end }}</p>
+                <p class="card-text">
+                  {{ "GAMES" | translate }}: {{ season.games }}
+                </p>
+                <p class="card-text" *ngIf="season.cleanSheets">
+                  {{ "CLEAN_SHEETS" | translate }}: {{ season.cleanSheets }}
+                </p>
+                <p class="card-text" *ngIf="season.saves">
+                  {{ "SAVES" | translate }}: {{ season.saves }}
+                </p>
+                <p class="card-text" *ngIf="season.goals">
+                  {{ "GOALS" | translate }}: {{ season.goals }}
+                </p>
+                <p class="card-text" *ngIf="season.assists">
+                  {{ "ASSISTS" | translate }}: {{ season.assists }}
+                </p>
+              </div>
             </div>
           </div>
         </div>

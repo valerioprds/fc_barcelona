@@ -1,16 +1,14 @@
 import { TestBed } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
-      declarations: [
-        AppComponent
-      ],
+      declarations: [AppComponent],
+      imports: [TranslateModule.forRoot(), RouterTestingModule],
+      providers: [TranslateService],
     }).compileComponents();
   });
 
@@ -26,10 +24,13 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('fc_barcelona');
   });
 
-  it('should render title', () => {
+  it('should switch language', () => {
     const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, fc_barcelona');
+    const app = fixture.componentInstance;
+    const translateService = TestBed.inject(TranslateService);
+    const useSpy = jest.spyOn(translateService, 'use');
+
+    app.switchLanguage('es');
+    expect(useSpy).toHaveBeenCalledWith('es');
   });
 });

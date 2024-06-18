@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { PlayerService } from '../../services/player.service';
 import { Player } from '../../models/player.interface';
@@ -9,13 +9,13 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
   players: Player[] = [];
 
   constructor(
     private playerService: PlayerService,
     private router: Router,
-    private translate: TranslateService
+    private translate: TranslateService,
   ) {
     // Set the default language
     this.translate.setDefaultLang('en');
@@ -23,13 +23,14 @@ export class HomeComponent {
     this.translate.use('en');
   }
 
-  switchLanguage(language: string) {
-    this.translate.use(language);
-  }
   ngOnInit(): void {
     this.playerService.getPlayers().subscribe((players) => {
       this.players = players;
     });
+  }
+
+  switchLanguage(language: string) {
+    this.translate.use(language);
   }
 
   navigateToPlayer(playerId: string): void {

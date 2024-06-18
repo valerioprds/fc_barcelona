@@ -1,53 +1,69 @@
 import { TestBed } from '@angular/core/testing';
-import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { PlayerService } from './player.service';
+import {
+  HttpClientTestingModule,
+  HttpTestingController,
+} from '@angular/common/http/testing';
+import { Router } from '@angular/router';
 import { Player } from '../models/player.interface';
 
 describe('PlayerService', () => {
   let service: PlayerService;
   let httpMock: HttpTestingController;
+  let router: Router;
 
   const mockPlayers: Player[] = [
     {
       id: '1',
-      name: 'Player 1',
-      position: 'Goalkeeper',
-      image: 'player1.jpg',
-      placeOfBirth: 'City 1',
+      name: 'Player One',
+      placeOfBirth: 'City',
       dateOfBirth: '1990-01-01',
-      weight: 80,
+      weight: 70,
       height: 180,
-      biography: { en: 'Biography 1', es: 'Biografía 1' },
+      image: 'path/to/image.jpg',
+      position: 'goalkeeper',
+      honors: {
+        laLiga: 3,
+        championsLeague: 2,
+        copaDelRey: 1,
+        clubWorldCup: 1,
+      },
+      biography: {
+        en: 'Biography in English',
+        es: 'Biografía en español',
+      },
       stats: {
         games: 100,
         cleanSheets: 50,
         saves: 200,
-        seasons: {
-          start: 2010,
-          end: 2020,
-          games: 100,
-          cleanSheets: 50,
-          saves: 200,
-        },
-      },
-      honors: {
-        laLiga: 1,
-        championsLeague: 1,
-        copaDelRey: 1,
-        clubWorldCup: 1,
+        goals: 0,
+        assists: 0,
+        seasons: [
+          {
+            start: 2010,
+            end: 2011,
+            games: 30,
+            cleanSheets: 15,
+            saves: 60,
+            goals: 0,
+            assists: 0,
+          },
+        ],
       },
     },
-    // Add more mock players if necessary
   ];
 
   beforeEach(() => {
+    const routerSpy = { navigate: jest.fn() };
+
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
-      providers: [PlayerService],
+      providers: [PlayerService, { provide: Router, useValue: routerSpy }],
     });
 
     service = TestBed.inject(PlayerService);
     httpMock = TestBed.inject(HttpTestingController);
+    router = TestBed.inject(Router);
   });
 
   afterEach(() => {
@@ -58,7 +74,7 @@ describe('PlayerService', () => {
     expect(service).toBeTruthy();
   });
 
-  it('should retrieve all players', () => {
+  it('should fetch players', () => {
     service.getPlayers().subscribe((players) => {
       expect(players.length).toBe(1);
       expect(players).toEqual(mockPlayers);
@@ -69,7 +85,29 @@ describe('PlayerService', () => {
     req.flush(mockPlayers);
   });
 
-  it('should retrieve a player by id', () => {
+  it('should handle error when fetching players', () => {
+    const consoleSpy = jest.spyOn(console, 'error');
+
+    service.getPlayers().subscribe(
+      () => fail('should have failed with an error'),
+      (error) => {
+        expect(error).toBe('Failed to fetch players; please try again later.');
+      },
+    );
+
+    const req = httpMock.expectOne('/assets/players/players.json');
+    req.flush('Error fetching players', {
+      status: 500,
+      statusText: 'Server Error',
+    });
+
+    expect(consoleSpy).toHaveBeenCalledWith(
+      'Error fetching players:',
+      expect.anything(),
+    );
+  });
+
+  it('should fetch player by id', () => {
     service.getPlayerById('1').subscribe((player) => {
       expect(player).toEqual(mockPlayers[0]);
     });
@@ -79,13 +117,24 @@ describe('PlayerService', () => {
     req.flush(mockPlayers);
   });
 
-  it('should return undefined for a non-existent player id', () => {
-    service.getPlayerById('2').subscribe((player) => {
-      expect(player).toBeUndefined();
-    });
+  it('should handle error when player not found', () => {
+    const consoleSpy = jest.spyOn(console, 'error');
+    const routerSpy = jest.spyOn(router, 'navigate');
+
+    service.getPlayerById('999').subscribe(
+      () => fail('should have failed with an error'),
+      (error) => {
+        expect(error).toBe('Failed to fetch player; please try again later.');
+      },
+    );
 
     const req = httpMock.expectOne('/assets/players/players.json');
-    expect(req.request.method).toBe('GET');
     req.flush(mockPlayers);
+
+    expect(consoleSpy).toHaveBeenCalledWith(
+      'Error fetching player:',
+      expect.anything(),
+    );
+    expect(routerSpy).toHaveBeenCalledWith(['/error']);
   });
 });
