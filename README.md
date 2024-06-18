@@ -1,27 +1,49 @@
-# FcBarcelona
+# FC Barcelona
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+## Project Overview
 
-## Development server
+**Name of the project**: FC Barcelona
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+**Purpose**: The purpose of this project is to showcase the players of the FC Barcelona men's team along with all their stats.
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Home Component**: Displays bootstrap cards of all players.
+- **Player Card Component**: Stores and displays the details of individual player cards.
+- **Player Details Component**: Shows all the stats for an individual player.
+- **Shared Components**:
+  - **Header**
+  - **Footer**
+  - **Error Page**: Displayed in case of a wrong route.
+  - **Spinner Component**
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Prerequisites
 
-## Running unit tests
+- Node.js
+- Angular 17
+- Jest (for testing)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Steps to Install
 
-## Running end-to-end tests
+1. Clone the repository.
+2. Navigate to the project directory.
+3. Install the necessary dependencies and start the project:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+npm start
+### Usage
 
-## Further help
+After installation, simply start the project using the command above. To view player stats, click on any player card on the home page to see detailed statistics.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### testing
+To run tests, use the following command:
+npm run test
+
+### Technologies Used
+Bootstrap
+
+
+
+
