@@ -10,7 +10,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HomeComponent } from './components/home/home.component';
 import { PlayerDetailsComponent } from './components/player-details/player-details.component';
-import { ErrorComponent } from './components/error/error.component';
+import { ErrorComponent } from './shared/error/error.component';
 import { PlayercardComponent } from './components/playercard/playercard.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
 export function HttpLoaderFactory(http: HttpClient) {
