@@ -23,8 +23,22 @@
   </div>
   <div class="card-body text-center">
     <h5 class="card-title">{{ player.name }}</h5>
-    <a [routerLink]="['/player', player.id]" class="btn btn-primary">
-      {{ "VIEW_STATS" | translate }}
-    </a>
+    <!-- Conditional rendering of spinner or button -->
+    <div *ngIf="loading; else showButton">
+      <app-spinner></app-spinner>
+    </div>
+    <ng-template #showButton>
+      <a (click)="onViewStats()"  class="btn btn-primary">
+        {{ "VIEW_STATS" | translate }}
+      </a>
+    </ng-template>
   </div>
 </div>
+
+
+
+
+
+<!--  <a [routerLink]="['/player', player.id]" class="btn btn-primary">
+      {{ "VIEW_STATS" | translate }}
+    </a> -->

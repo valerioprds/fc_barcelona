@@ -12,12 +12,13 @@ import { HomeComponent } from './components/home/home.component';
 import { PlayerDetailsComponent } from './components/player-details/player-details.component';
 import { ErrorComponent } from './components/error/error.component';
 import { PlayercardComponent } from './components/playercard/playercard.component';
+import { SpinnerComponent } from './components/spinner/spinner.component';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, HomeComponent, PlayerDetailsComponent, ErrorComponent, PlayercardComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, HomeComponent, PlayerDetailsComponent, ErrorComponent, PlayercardComponent, SpinnerComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
