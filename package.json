@@ -9,6 +9,8 @@
     "test": "jest",
     "test:service": "npx jest src/app/services/player.service.spec.ts",
     "test:player-details": "npx jest src/app/components/player-details/player-details.component.spec.ts",
+    "test:player-card": "npx jest src/app/components/playercard/playercard.component.spec.ts",
+
     "test:home": "npx jest src/app/components/home/home.component.spec.ts"
   },
   "private": true,
