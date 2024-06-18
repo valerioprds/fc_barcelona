@@ -31,7 +31,6 @@
 2. Navigate to the project directory.
 3. Install the necessary dependencies and start the project:
 
-```bash
 npm start
 ### Usage
 
@@ -43,6 +42,8 @@ npm run test
 
 ### Technologies Used
 Bootstrap
+
+```bash
 
 
 
