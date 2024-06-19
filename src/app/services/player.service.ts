@@ -1,9 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, catchError, map, throwError } from 'rxjs';
-import { Player } from '../models/player.interface';
 import { Router } from '@angular/router';
-
+import { Player } from '../models/clases/player.class';
 @Injectable({
   providedIn: 'root',
 })
@@ -32,7 +31,7 @@ export class PlayerService {
         if (!player) {
           throw new Error('Player not found');
         }
-        return player as Player;
+        return new Player(player, player);
       }),
       catchError((error) => {
         console.error('Error fetching player:', error);

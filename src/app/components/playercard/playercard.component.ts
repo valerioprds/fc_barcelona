@@ -1,8 +1,7 @@
+import { Player } from './../../models/clases/player.class';
 import { Component, Inject, Input } from '@angular/core';
-import { Player } from '../../models/player.interface';
 import { Router } from '@angular/router';
-
-@Component({
+ @Component({
   selector: 'app-playercard',
   templateUrl: './playercard.component.html',
   styleUrl: './playercard.component.scss',
