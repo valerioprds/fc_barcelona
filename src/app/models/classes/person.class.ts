@@ -1,4 +1,4 @@
-import { IPerson } from '../person.interface';
+import { IPerson } from '../interfaces/person.interface';
 
 export class Person implements IPerson {
   id: string;
