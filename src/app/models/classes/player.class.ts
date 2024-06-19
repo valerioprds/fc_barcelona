@@ -1,9 +1,9 @@
-import { Biography } from '../biography.interface';
-import { Honors } from '../honors.interface';
-import { IPerson } from '../person.interface';
-import { IPlayer } from '../player.interface';
-import { Stats } from '../stats.interface';
+import { Biography } from '../interfaces/biography.interface';
+import { Honors } from '../interfaces/honors.interface';
+import { IPerson } from '../interfaces/person.interface';
+import { Stats } from '../interfaces/stats.interface';
 import { Person } from './person.class';
+import { IPlayer } from '../interfaces/player.interface';
 
 export class Player extends Person implements IPlayer {
   position: string;

@@ -1,4 +1,4 @@
-import { Player } from './../../models/clases/player.class';
+import { Player } from '../../models/classes/player.class';
 import { Component, Inject, Input } from '@angular/core';
 import { Router } from '@angular/router';
  @Component({
