@@ -1,19 +1,20 @@
 @import "../../app.component.scss";
 
-
-
-/* fa-facebook fa-x-twitter  fa-instagram*/
-
-.fa-facebook {
+// Definimos el mixin para iconos de redes sociales
+@mixin social-icon($color) {
   font-size: 30px;
-  color: #1877f2;
+  color: $color;
 }
+
+// Aplicamos el mixin a cada clase de icono con su color específico
+.fa-facebook {
+  @include social-icon($facebook-color);
+}
+
 .fa-x-twitter {
-  font-size: 30px;
-  color: #000000;
+  @include social-icon($twitter-color);
 }
 
 .fa-instagram {
-  font-size: 30px;
-  color: #e1306c;
+  @include social-icon($instagram-color);
 }
