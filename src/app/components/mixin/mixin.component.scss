@@ -1,0 +1,87 @@
+//Vamos a crear un mixin para aplicar bordes redondeados a un elemento.
+
+// Definimos el mixin 'rounded-corners' con el parámetro '$radius'
+@mixin rounded-corners($radius) {
+  border-radius: $radius;
+}
+
+// Utilizamos el mixin en diferentes botones con distintos valores para '$radius'
+.button-small {
+  @include rounded-corners(5px);
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-medium {
+  @include rounded-corners(10px);
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-large {
+  @include rounded-corners(15px);
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/*   ******************* **************************** */
+
+// Definimos un mixin llamado 'box-shadow' que acepta cuatro parámetros: $h-offset, $v-offset, $blur, $color
+@mixin box-shadow($h-offset, $v-offset, $blur, $color) {
+  box-shadow: $h-offset $v-offset $blur $color;
+}
+// a: $h-offset: desplazamiento horizontal, $v-offset: desplazamiento vertical, $blur: desenfoque, $color: color de la sombra
+
+// Utilizamos el mixin en un contenedor
+.container {
+  @include box-shadow(5px, 5px, 10px, rgba(0, 0, 0, 0.5));
+  background-color: #ecf0f1;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #bdc3c7;
+}
+
+// Definimos un mixin llamado 'respond-to' que acepta un parámetro $breakpoint
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == "phone" {
+    @media (max-width: 400px) {
+      @content;
+    }
+  } @else if $breakpoint == "tablet" {
+    @media (max-width: 900px) {
+      @content;
+    }
+  } @else if $breakpoint == "desktop" {
+    @media (min-width: 901px) {
+      @content;
+    }
+  }
+}
+
+// Utilizamos el mixin en un contenedor
+.responsive-container {
+  width: 100%;
+  padding: 20px;
+  background-color: #f1c40f;
+
+  @include respond-to("phone") {
+    background-color: #e74c3c;
+  }
+
+  @include respond-to("tablet") {
+    background-color: #3498db;
+  }
+
+  @include respond-to("desktop") {
+    background-color: #2ecc71;
+  }
+}

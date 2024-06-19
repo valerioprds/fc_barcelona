@@ -13,12 +13,13 @@ import { PlayerDetailsComponent } from './components/player-details/player-detai
 import { ErrorComponent } from './shared/error/error.component';
 import { PlayercardComponent } from './components/playercard/playercard.component';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
+import { MixinComponent } from './components/mixin/mixin.component';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, HomeComponent, PlayerDetailsComponent, ErrorComponent, PlayercardComponent, SpinnerComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, HomeComponent, PlayerDetailsComponent, ErrorComponent, PlayercardComponent, SpinnerComponent, MixinComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
