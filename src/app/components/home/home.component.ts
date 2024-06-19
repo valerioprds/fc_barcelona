@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { PlayerService } from '../../services/player.service';
-import { Player } from '../../models/player.interface';
+import { Player } from './../../models/clases/player.class';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
