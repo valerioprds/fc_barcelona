@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, catchError, map, throwError } from 'rxjs';
 import { Router } from '@angular/router';
-import { Player } from '../models/clases/player.class';
+import { Player } from '../models/classes/player.class';
 @Injectable({
   providedIn: 'root',
 })
