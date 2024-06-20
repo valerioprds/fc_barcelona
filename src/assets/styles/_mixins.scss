@@ -9,3 +9,20 @@
 @mixin font-size($size) {
   font-size: $size;
 }
+
+/* mixins for playercard component */
+@mixin transition($properties...) {
+  transition: $properties;
+}
+
+// Mixin for flex center alignment
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Mixin for border-radius
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
