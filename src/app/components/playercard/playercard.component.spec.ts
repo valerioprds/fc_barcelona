@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { PlayercardComponent } from './playercard.component';
-import { Player } from '../../models/player.interface';
+import { Player } from '../../models/classes/player.class';
 import { Router } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 import { TranslateModule } from '@ngx-translate/core';

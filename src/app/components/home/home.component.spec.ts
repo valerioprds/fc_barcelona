@@ -4,7 +4,7 @@ import { PlayerService } from '../../services/player.service';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { Router } from '@angular/router';
 import { of } from 'rxjs';
-import { Player } from '../../models/player.interface';
+import { Player } from '../../models/classes/player.class';
 import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 
