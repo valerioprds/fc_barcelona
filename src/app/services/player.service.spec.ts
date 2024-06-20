@@ -5,7 +5,7 @@ import {
   HttpTestingController,
 } from '@angular/common/http/testing';
 import { Router } from '@angular/router';
-import { Player } from '../models/player.interface';
+import { Player } from '../models/classes/player.class';
 
 describe('PlayerService', () => {
   let service: PlayerService;
