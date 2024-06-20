@@ -4,9 +4,6 @@ $facebook-color: #1877f2;
 $twitter-color: #000000;
 $instagram-color: #e1306c;
 
-
-
-
 .gradient-bg {
   background: rgb(199, 20, 48);
   background: linear-gradient(
@@ -26,5 +23,5 @@ $instagram-color: #e1306c;
 .logo-text {
   font-size: 30px;
   font-weight: bold;
-  color: $primary-color;
+  //color: $primary-color;
 }

@@ -1,0 +1,22 @@
+/* placeholders for error pages */
+
+%container {
+  margin: 0;
+  height: 100vh;
+}
+
+%text-center {
+  text-align: center;
+  color: #343a40;
+}
+
+/* player card component placeholders */
+// Placeholder for card border-radius
+%card-border-radius {
+  @include border-radius(10px);
+}
+
+// Placeholder for card transition
+%card-transition {
+  @include transition(transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out);
+}
