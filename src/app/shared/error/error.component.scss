@@ -1,34 +1,33 @@
+@import "../../../assets/styles/_mixins";
+@import "../../../assets/styles/_placeholders";
+
 .container-fluid {
-  height: 100vh;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %container;
+  @include flex-center;
   background-color: #f8f9fa;
 }
 
 .error-container {
-  text-align: center;
-  color: #343a40;
+  @extend %text-center;
 }
 
 .error-code {
-  font-size: 96px;
+  @include font-size(96px);
   font-weight: bold;
   color: #dc3545;
 }
 
 .error-message {
-  font-size: 24px;
+  @include font-size(24px);
   margin: 20px 0;
 }
 
 .error-description {
-  font-size: 18px;
+  @include font-size(18px);
   margin-bottom: 20px;
 }
 
 .btn-home {
   padding: 10px 20px;
-  font-size: 18px;
+  @include font-size(18px);
 }
